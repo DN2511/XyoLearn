@@ -7,23 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212DB946248069E5000BF378 /* Swift+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212DB945248069E5000BF378 /* Swift+SpecialEffects.swift */; };
+		212DB94824806A14000BF378 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212DB94724806A14000BF378 /* Swift+Gif.swift */; };
+		212DB94A24806EFA000BF378 /* animatedCow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 212DB94924806EFA000BF378 /* animatedCow.gif */; };
+		212DB94D24806F2A000BF378 /* animatedDog.gif in Resources */ = {isa = PBXBuildFile; fileRef = 212DB94C24806F2A000BF378 /* animatedDog.gif */; };
+		212DB94F24806F4C000BF378 /* animatedDog1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 212DB94E24806F4C000BF378 /* animatedDog1.gif */; };
+		212DB95124806F68000BF378 /* animatedFish.gif in Resources */ = {isa = PBXBuildFile; fileRef = 212DB95024806F68000BF378 /* animatedFish.gif */; };
+		212DB95324806F7E000BF378 /* animatedMonkey.gif in Resources */ = {isa = PBXBuildFile; fileRef = 212DB95224806F7E000BF378 /* animatedMonkey.gif */; };
+		212DB95524806FA2000BF378 /* animatedPig.gif in Resources */ = {isa = PBXBuildFile; fileRef = 212DB95424806FA2000BF378 /* animatedPig.gif */; };
+		212DB95724806FC3000BF378 /* animatedMouse.gif in Resources */ = {isa = PBXBuildFile; fileRef = 212DB95624806FC3000BF378 /* animatedMouse.gif */; };
+		212DB95924806FF5000BF378 /* animatedCat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 212DB95824806FF5000BF378 /* animatedCat.gif */; };
+		212DB95D24807015000BF378 /* animatedGrapes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 212DB95A24807015000BF378 /* animatedGrapes.gif */; };
+		212DB95F24807015000BF378 /* animatedCarrot.gif in Resources */ = {isa = PBXBuildFile; fileRef = 212DB95C24807015000BF378 /* animatedCarrot.gif */; };
 		21DEEEBA2480605F00CDE4E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEEEB92480605F00CDE4E0 /* AppDelegate.swift */; };
 		21DEEEBC2480605F00CDE4E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEEEBB2480605F00CDE4E0 /* SceneDelegate.swift */; };
-		21DEEEBE2480605F00CDE4E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEEEBD2480605F00CDE4E0 /* ViewController.swift */; };
+		21DEEEBE2480605F00CDE4E0 /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEEEBD2480605F00CDE4E0 /* ColorsViewController.swift */; };
 		21DEEEC12480605F00CDE4E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DEEEBF2480605F00CDE4E0 /* Main.storyboard */; };
 		21DEEEC32480606200CDE4E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DEEEC22480606200CDE4E0 /* Assets.xcassets */; };
 		21DEEEC62480606200CDE4E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DEEEC42480606200CDE4E0 /* LaunchScreen.storyboard */; };
+		21DEEECE2480624500CDE4E0 /* VegetablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEEECD2480624500CDE4E0 /* VegetablesViewController.swift */; };
+		21DEEED02480632C00CDE4E0 /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEEECF2480632C00CDE4E0 /* FruitsViewController.swift */; };
+		21DEEED22480639B00CDE4E0 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEEED12480639B00CDE4E0 /* AnimalsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		212DB945248069E5000BF378 /* Swift+SpecialEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+SpecialEffects.swift"; sourceTree = "<group>"; };
+		212DB94724806A14000BF378 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		212DB94924806EFA000BF378 /* animatedCow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedCow.gif; sourceTree = "<group>"; };
+		212DB94C24806F2A000BF378 /* animatedDog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedDog.gif; sourceTree = "<group>"; };
+		212DB94E24806F4C000BF378 /* animatedDog1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedDog1.gif; sourceTree = "<group>"; };
+		212DB95024806F68000BF378 /* animatedFish.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedFish.gif; sourceTree = "<group>"; };
+		212DB95224806F7E000BF378 /* animatedMonkey.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedMonkey.gif; sourceTree = "<group>"; };
+		212DB95424806FA2000BF378 /* animatedPig.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedPig.gif; sourceTree = "<group>"; };
+		212DB95624806FC3000BF378 /* animatedMouse.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedMouse.gif; sourceTree = "<group>"; };
+		212DB95824806FF5000BF378 /* animatedCat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedCat.gif; sourceTree = "<group>"; };
+		212DB95A24807015000BF378 /* animatedGrapes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedGrapes.gif; sourceTree = "<group>"; };
+		212DB95C24807015000BF378 /* animatedCarrot.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedCarrot.gif; sourceTree = "<group>"; };
 		21DEEEB62480605F00CDE4E0 /* XyloLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XyloLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DEEEB92480605F00CDE4E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21DEEEBB2480605F00CDE4E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21DEEEBD2480605F00CDE4E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21DEEEBD2480605F00CDE4E0 /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
 		21DEEEC02480605F00CDE4E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21DEEEC22480606200CDE4E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21DEEEC52480606200CDE4E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21DEEEC72480606200CDE4E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21DEEECD2480624500CDE4E0 /* VegetablesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetablesViewController.swift; sourceTree = "<group>"; };
+		21DEEECF2480632C00CDE4E0 /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
+		21DEEED12480639B00CDE4E0 /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +67,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212DB941248068BD000BF378 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21DEEEBF2480605F00CDE4E0 /* Main.storyboard */,
+				21DEEEC42480606200CDE4E0 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		212DB94424806959000BF378 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				212DB945248069E5000BF378 /* Swift+SpecialEffects.swift */,
+				212DB94724806A14000BF378 /* Swift+Gif.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		212DB94B24806F16000BF378 /* Animated Images */ = {
+			isa = PBXGroup;
+			children = (
+				212DB94924806EFA000BF378 /* animatedCow.gif */,
+				212DB94C24806F2A000BF378 /* animatedDog.gif */,
+				212DB94E24806F4C000BF378 /* animatedDog1.gif */,
+				212DB95024806F68000BF378 /* animatedFish.gif */,
+				212DB95224806F7E000BF378 /* animatedMonkey.gif */,
+				212DB95424806FA2000BF378 /* animatedPig.gif */,
+				212DB95624806FC3000BF378 /* animatedMouse.gif */,
+				212DB95824806FF5000BF378 /* animatedCat.gif */,
+				212DB95C24807015000BF378 /* animatedCarrot.gif */,
+				212DB95A24807015000BF378 /* animatedGrapes.gif */,
+			);
+			path = "Animated Images";
+			sourceTree = "<group>";
+		};
 		21DEEEAD2480605F00CDE4E0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +123,25 @@
 			children = (
 				21DEEEB92480605F00CDE4E0 /* AppDelegate.swift */,
 				21DEEEBB2480605F00CDE4E0 /* SceneDelegate.swift */,
-				21DEEEBD2480605F00CDE4E0 /* ViewController.swift */,
-				21DEEEBF2480605F00CDE4E0 /* Main.storyboard */,
+				212DB941248068BD000BF378 /* View */,
+				21DEEED32480640100CDE4E0 /* Controllers */,
+				212DB94424806959000BF378 /* Extensions */,
+				212DB94B24806F16000BF378 /* Animated Images */,
 				21DEEEC22480606200CDE4E0 /* Assets.xcassets */,
-				21DEEEC42480606200CDE4E0 /* LaunchScreen.storyboard */,
 				21DEEEC72480606200CDE4E0 /* Info.plist */,
 			);
 			path = XyloLearn;
+			sourceTree = "<group>";
+		};
+		21DEEED32480640100CDE4E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21DEEEBD2480605F00CDE4E0 /* ColorsViewController.swift */,
+				21DEEECF2480632C00CDE4E0 /* FruitsViewController.swift */,
+				21DEEECD2480624500CDE4E0 /* VegetablesViewController.swift */,
+				21DEEED12480639B00CDE4E0 /* AnimalsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +204,17 @@
 			files = (
 				21DEEEC62480606200CDE4E0 /* LaunchScreen.storyboard in Resources */,
 				21DEEEC32480606200CDE4E0 /* Assets.xcassets in Resources */,
+				212DB95324806F7E000BF378 /* animatedMonkey.gif in Resources */,
+				212DB94D24806F2A000BF378 /* animatedDog.gif in Resources */,
+				212DB95124806F68000BF378 /* animatedFish.gif in Resources */,
 				21DEEEC12480605F00CDE4E0 /* Main.storyboard in Resources */,
+				212DB95724806FC3000BF378 /* animatedMouse.gif in Resources */,
+				212DB95924806FF5000BF378 /* animatedCat.gif in Resources */,
+				212DB95524806FA2000BF378 /* animatedPig.gif in Resources */,
+				212DB95F24807015000BF378 /* animatedCarrot.gif in Resources */,
+				212DB94A24806EFA000BF378 /* animatedCow.gif in Resources */,
+				212DB94F24806F4C000BF378 /* animatedDog1.gif in Resources */,
+				212DB95D24807015000BF378 /* animatedGrapes.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21DEEEBE2480605F00CDE4E0 /* ViewController.swift in Sources */,
+				212DB94824806A14000BF378 /* Swift+Gif.swift in Sources */,
+				21DEEEBE2480605F00CDE4E0 /* ColorsViewController.swift in Sources */,
+				212DB946248069E5000BF378 /* Swift+SpecialEffects.swift in Sources */,
+				21DEEED02480632C00CDE4E0 /* FruitsViewController.swift in Sources */,
+				21DEEED22480639B00CDE4E0 /* AnimalsViewController.swift in Sources */,
 				21DEEEBA2480605F00CDE4E0 /* AppDelegate.swift in Sources */,
+				21DEEECE2480624500CDE4E0 /* VegetablesViewController.swift in Sources */,
 				21DEEEBC2480605F00CDE4E0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

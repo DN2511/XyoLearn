@@ -32,23 +32,23 @@ class AnimalsViewController: UIViewController {
     if sender.currentTitle == "Cat" {
         imageview.loadGif(name: "animatedCat")
     }
-    else if sender.currentTitle == "Dog" {
-        imageview.loadGif(name: "animatedDog")
+    else if sender.currentTitle == "Bunny" {
+        imageview.loadGif(name: "animatedBunny")
     }
     else if sender.currentTitle == "Fish" {
         imageview.loadGif(name: "animatedFish")
     }
-    else if sender.currentTitle == "Monkey" {
-        imageview.loadGif(name: "animatedMonkey")
+    else if sender.currentTitle == "Goat" {
+        imageview.loadGif(name: "animatedGoat")
     }
-    else if sender.currentTitle == "Cow" {
-        imageview.loadGif(name: "animatedCow")
+    else if sender.currentTitle == "Lion" {
+        imageview.loadGif(name: "animatedLion")
     }
-    else if sender.currentTitle == "Pig" {
-        imageview.loadGif(name: "animatedPig")
+    else if sender.currentTitle == "Kangaroo" {
+        imageview.loadGif(name: "animatedKangaroo")
     }
     else {
-        imageview.loadGif(name: "animatedMouse")
+        imageview.loadGif(name: "animatedFrog")
     }
     
     let height:NSLayoutConstraint = NSLayoutConstraint(item: alert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: self.view.frame.height * 0.50)

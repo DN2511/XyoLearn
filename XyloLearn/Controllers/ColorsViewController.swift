@@ -34,14 +34,17 @@ class ColorsViewController: UIViewController {
              else if sender.currentTitle == "GREEN" {
                  subview.backgroundColor = UIColor.systemGreen
              }
-             else if sender.currentTitle == "PINK" {
-                 subview.backgroundColor = UIColor.systemPink
-             }
              else if sender.currentTitle == "BLUE" {
                  subview.backgroundColor = UIColor.systemBlue
              }
+             else if sender.currentTitle == "DARK BLUE" {
+                 subview.backgroundColor = UIColor.systemIndigo
+             }
+             else if sender.currentTitle == "PURPLE" {
+                subview.backgroundColor = UIColor.systemPurple
+             }
              else {
-                 subview.backgroundColor = UIColor.systemPurple
+                subview.backgroundColor = UIColor.systemPink
              }
              
              let height:NSLayoutConstraint = NSLayoutConstraint(item: alert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: self.view.frame.height * 0.50)

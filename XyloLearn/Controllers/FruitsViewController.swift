@@ -23,28 +23,34 @@ class FruitsViewController: UIViewController {
     
     let subview = (alert.view.subviews.first?.subviews.first?.subviews.first!)! as UIView
     subview.layer.cornerRadius = 1
+        
+    let imageview = UIImageView(frame: CGRect())
+        imageview.contentMode = UIView.ContentMode.scaleAspectFill
+        
+//        alert.setValue(imageview, forKey: "accessoryView")
+    alert.view.addSubview(imageview)
     
     
     if sender.currentTitle == "Banana" {
-        subview.backgroundColor = UIColor.systemRed
+       imageview.loadGif(name: "animatedBanana")
     }
     else if sender.currentTitle == "Apple" {
-        subview.backgroundColor = UIColor.systemOrange
+        imageview.loadGif(name: "animatedBanana")
     }
     else if sender.currentTitle == "Orange" {
-        subview.backgroundColor = UIColor.systemYellow
+        imageview.loadGif(name: "animatedOrange")
     }
-    else if sender.currentTitle == "Mango" {
-        subview.backgroundColor = UIColor.systemGreen
+    else if sender.currentTitle == "Watermelon" {
+        imageview.loadGif(name: "animatedWatermelon")
     }
-    else if sender.currentTitle == "PINK" {
-        subview.backgroundColor = UIColor.systemPink
+    else if sender.currentTitle == "Pear" {
+        imageview.loadGif(name: "animatedPear")
     }
-    else if sender.currentTitle == "BLUE" {
-        subview.backgroundColor = UIColor.systemBlue
+    else if sender.currentTitle == "Strawberry" {
+        imageview.loadGif(name: "animatedStrawberry")
     }
     else {
-        subview.backgroundColor = UIColor.systemPurple
+        imageview.loadGif(name: "animatedGrapes")
     }
     
     let height:NSLayoutConstraint = NSLayoutConstraint(item: alert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: self.view.frame.height * 0.50)

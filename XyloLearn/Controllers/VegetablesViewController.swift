@@ -36,20 +36,20 @@ class VegetablesViewController: UIViewController {
         else if sender.currentTitle == "Carrot" {
             imageview.loadGif(name: "animatedCarrot")
         }
-        else if sender.currentTitle == "Egg Plant" {
-            imageview.loadGif(name: "")
+        else if sender.currentTitle == "Capsicum" {
+            imageview.loadGif(name: "animatedCapsicum")
         }
         else if sender.currentTitle == "Pumpkin" {
-            subview.backgroundColor = UIColor.systemGreen
+            imageview.loadGif(name: "animatedPumpkin")
         }
         else if sender.currentTitle == "Mushroom" {
-            subview.backgroundColor = UIColor.systemPink
+            imageview.loadGif(name: "animatedMushroom")
         }
         else if sender.currentTitle == "Potato" {
-            subview.backgroundColor = UIColor.systemBlue
+            imageview.loadGif(name: "animatedPotato")
         }
         else {
-            subview.backgroundColor = UIColor.systemPurple
+            imageview.loadGif(name: "animatedPeas")
         }
         
         let height:NSLayoutConstraint = NSLayoutConstraint(item: alert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: self.view.frame.height * 0.50)

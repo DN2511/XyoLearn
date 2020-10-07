@@ -17,7 +17,7 @@ class StartupPageViewController: UIViewController {
         
         gifBackground.loadGif(name: "homeGif")
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
 
                 // Navigate to HomePageViewController
 

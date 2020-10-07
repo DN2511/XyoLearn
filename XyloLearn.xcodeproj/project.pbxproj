@@ -34,8 +34,11 @@
 		2153D7A424D41A5D00466564 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153D7A324D41A5D00466564 /* HomePageViewController.swift */; };
 		215F55EC24DE62AD00FF401A /* homeGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 215F55EB24DE62AD00FF401A /* homeGif.gif */; };
 		215F55EE24DEBFEA00FF401A /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215F55ED24DEBFEA00FF401A /* UIButtonExtension.swift */; };
+		218C8912251769BB00160605 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C8911251769BB00160605 /* PopUpViewController.swift */; };
+		218C8914251888DD00160605 /* ImageSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C8913251888DD00160605 /* ImageSizeExtension.swift */; };
 		219569D124F23C300055D2DE /* xyloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219569D024F23C300055D2DE /* xyloViewController.swift */; };
 		219569D324F677A60055D2DE /* xyloLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219569D224F677A60055D2DE /* xyloLaunchScreen.storyboard */; };
+		219569E724FA1BDE0055D2DE /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 219569E624FA1BDE0055D2DE /* Sounds */; };
 		21DEEEBA2480605F00CDE4E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEEEB92480605F00CDE4E0 /* AppDelegate.swift */; };
 		21DEEEBC2480605F00CDE4E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEEEBB2480605F00CDE4E0 /* SceneDelegate.swift */; };
 		21DEEEBE2480605F00CDE4E0 /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DEEEBD2480605F00CDE4E0 /* ColorsViewController.swift */; };
@@ -74,8 +77,11 @@
 		2153D7A324D41A5D00466564 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		215F55EB24DE62AD00FF401A /* homeGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = homeGif.gif; path = Images/GIFS/HomeBackgroundGIF/homeGif.gif; sourceTree = SOURCE_ROOT; };
 		215F55ED24DEBFEA00FF401A /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIButtonExtension.swift; path = XyloLearn/View/UIButtonExtension.swift; sourceTree = SOURCE_ROOT; };
+		218C8911251769BB00160605 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopUpViewController.swift; path = XyloLearn/View/PopUpViewController.swift; sourceTree = SOURCE_ROOT; };
+		218C8913251888DD00160605 /* ImageSizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageSizeExtension.swift; path = XyloLearn/Controllers/ImageSizeExtension.swift; sourceTree = SOURCE_ROOT; };
 		219569D024F23C300055D2DE /* xyloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = xyloViewController.swift; path = XyloLearn/View/xyloViewController.swift; sourceTree = SOURCE_ROOT; };
 		219569D224F677A60055D2DE /* xyloLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = xyloLaunchScreen.storyboard; sourceTree = "<group>"; };
+		219569E624FA1BDE0055D2DE /* Sounds */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sounds; sourceTree = SOURCE_ROOT; };
 		21DEEEB62480605F00CDE4E0 /* XyloLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XyloLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DEEEB92480605F00CDE4E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21DEEEBB2480605F00CDE4E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 		212DB94424806959000BF378 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				218C8913251888DD00160605 /* ImageSizeExtension.swift */,
 				215F55ED24DEBFEA00FF401A /* UIButtonExtension.swift */,
 				212DB945248069E5000BF378 /* Swift+SpecialEffects.swift */,
 				212DB94724806A14000BF378 /* Swift+Gif.swift */,
@@ -170,10 +177,10 @@
 				21DEEEBB2480605F00CDE4E0 /* SceneDelegate.swift */,
 				212DB941248068BD000BF378 /* View */,
 				21DEEED32480640100CDE4E0 /* Controllers */,
-				212DB94424806959000BF378 /* Extensions */,
 				212DB94B24806F16000BF378 /* Animated Images */,
 				21DEEEC22480606200CDE4E0 /* Assets.xcassets */,
 				21DEEEC72480606200CDE4E0 /* Info.plist */,
+				219569E624FA1BDE0055D2DE /* Sounds */,
 			);
 			path = XyloLearn;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 		21DEEED32480640100CDE4E0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				218C8911251769BB00160605 /* PopUpViewController.swift */,
 				219569D024F23C300055D2DE /* xyloViewController.swift */,
 				2153D7A324D41A5D00466564 /* HomePageViewController.swift */,
 				212E413324D2B77400FBE319 /* StartupPageViewController.swift */,
@@ -188,6 +196,7 @@
 				21DEEECF2480632C00CDE4E0 /* FruitsViewController.swift */,
 				21DEEECD2480624500CDE4E0 /* VegetablesViewController.swift */,
 				21DEEED12480639B00CDE4E0 /* AnimalsViewController.swift */,
+				212DB94424806959000BF378 /* Extensions */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -250,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219569E724FA1BDE0055D2DE /* Sounds in Resources */,
 				210ADFD224A3574A0054E861 /* animatedPotato.gif in Resources */,
 				210ADFC524A357370054E861 /* animatedStrawberry.gif in Resources */,
 				210ADFE524A357580054E861 /* animatedGoat.gif in Resources */,
@@ -292,6 +302,8 @@
 				21DEEEBE2480605F00CDE4E0 /* ColorsViewController.swift in Sources */,
 				212E413424D2B77400FBE319 /* StartupPageViewController.swift in Sources */,
 				212DB946248069E5000BF378 /* Swift+SpecialEffects.swift in Sources */,
+				218C8912251769BB00160605 /* PopUpViewController.swift in Sources */,
+				218C8914251888DD00160605 /* ImageSizeExtension.swift in Sources */,
 				21DEEED02480632C00CDE4E0 /* FruitsViewController.swift in Sources */,
 				21DEEED22480639B00CDE4E0 /* AnimalsViewController.swift in Sources */,
 				21DEEEBA2480605F00CDE4E0 /* AppDelegate.swift in Sources */,

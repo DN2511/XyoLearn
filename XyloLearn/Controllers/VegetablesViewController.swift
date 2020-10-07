@@ -5,70 +5,59 @@ import UIKit
 import ImageIO
 
 class VegetablesViewController: UIViewController {
-    
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-
+    
     @IBAction func vegetablePressed(_ sender: UIButton) {
         
-        // UIAlert View
+        //MARK:- Custom Alert Initialization
         
-        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
-        self.present(alert, animated: true, completion: {
-            alert.view.superview?.isUserInteractionEnabled = true
-            alert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
-        })
+        let customAlert = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popUpID") as! PopUpViewController
         
-        let subview = (alert.view.subviews.first?.subviews.first?.subviews.first!)! as UIView
-        subview.layer.cornerRadius = 1
+        self.addChild(customAlert)
+        customAlert.view.frame = self.view.frame
+        self.view.addSubview(customAlert.view)
+        customAlert.didMove(toParent: self)
         
-        let imageview = UIImageView(frame: CGRect(x: 50, y:80, width: 200, height: 200))
+        //MARK:- Image View Initialization
         
-        alert.view.addSubview(imageview)
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.isAccessibilityElement = true
+        customAlert.view.addSubview(imageView)
         
+        //MARK:- Loop For Different Images
         
-        if sender.currentTitle == "Broccoli" {
-            imageview.loadGif(name: "animatedBroccoli")
+        if sender.currentTitle == "1" {
+            imageView.loadGif(name: "animatedBroccoli")
         }
-        else if sender.currentTitle == "Carrot" {
-            imageview.loadGif(name: "animatedCarrot")
+        else if sender.currentTitle == "2" {
+            imageView.loadGif(name: "animatedCarrot")
         }
-        else if sender.currentTitle == "Capsicum" {
-            imageview.loadGif(name: "animatedCapsicum")
+        else if sender.currentTitle == "3" {
+            imageView.loadGif(name: "animatedCapsicum")
         }
-        else if sender.currentTitle == "Pumpkin" {
-            imageview.loadGif(name: "animatedPumpkin")
+        else if sender.currentTitle == "4" {
+            imageView.loadGif(name: "animatedPumpkin")
         }
-        else if sender.currentTitle == "Mushroom" {
-            imageview.loadGif(name: "animatedMushroom")
+        else if sender.currentTitle == "5" {
+            imageView.loadGif(name: "animatedMushroom")
         }
-        else if sender.currentTitle == "Potato" {
-            imageview.loadGif(name: "animatedPotato")
+        else if sender.currentTitle == "6" {
+            imageView.loadGif(name: "animatedPotato")
         }
         else {
-            imageview.loadGif(name: "animatedPeas")
+            imageView.loadGif(name: "animatedPeas")
         }
         
-        let height:NSLayoutConstraint = NSLayoutConstraint(item: alert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: self.view.frame.height * 0.50)
+        //MARK:- Image Constraints
         
-        alert.view.addConstraint(height)
-        
-        // Calling the Blur Function from Extension File -- This will Blur the background
-        self.view.blurredEffect()
-        
-        // This Will keep the UIAlert View for 3 seconds
-        let when = DispatchTime.now() + 3
-        DispatchQueue.main.asyncAfter(deadline: when){
-            
-            // This will dismiss the alert
-            alert.dismiss(animated: true, completion: nil)
-            
-            // Calling the function from Extension file to dismiss Blur
-            self.view.dismissBlurredEffect()
-            
-        }
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.leadingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.topAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
 }

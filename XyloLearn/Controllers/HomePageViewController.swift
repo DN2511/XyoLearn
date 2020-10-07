@@ -28,9 +28,9 @@ class HomePageViewController: UIViewController {
     
     @IBAction func xyloButtonPressed(_ sender: UIButton) {
         
-//        let colorVC = self.storyboard?.instantiateViewController(withIdentifier: "colourVC") as! ColorsViewController
-//
-//               self.navigationController?.pushViewController(colorVC, animated: false)
+        let xVC = self.storyboard?.instantiateViewController(withIdentifier: "xyloVC") as! xyloViewController
+
+               self.navigationController?.pushViewController(xVC, animated: false)
     }
     
     

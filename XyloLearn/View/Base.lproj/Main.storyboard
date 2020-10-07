@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sBi-FR-kf0">
-    <device id="retina6_5" orientation="landscape" appearance="light"/>
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,20 +12,20 @@
             <objects>
                 <viewController storyboardIdentifier="Home" id="nWl-pk-UKY" customClass="HomePageViewController" customModule="XyloLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZT3-pe-MVg">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normalBackground" translatesAutoresizingMaskIntoConstraints="NO" id="qQe-oT-kJC">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Pm-Xv-5rF">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <rect key="frame" x="44" y="0.0" width="724" height="354"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfJ-bA-6ca" userLabel="Left View">
-                                        <rect key="frame" x="0.0" y="0.0" width="268.66666666666669" height="393"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240.66666666666666" height="354"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="jjD-0T-8Yi">
-                                                <rect key="frame" x="44.666666666666671" y="97.333333333333329" width="179.66666666666663" height="198.33333333333337"/>
+                                                <rect key="frame" x="30.666666666666671" y="78.000000000000014" width="179.66666666666663" height="198.33333333333337"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezZ-0M-1h8" userLabel="Colors Button">
                                                         <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="83"/>
@@ -50,10 +50,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3I-Po-9VI" userLabel="Middle View">
-                                        <rect key="frame" x="269.66666666666663" y="0.0" width="268.66666666666663" height="393"/>
+                                        <rect key="frame" x="241.66666666666669" y="0.0" width="240.66666666666669" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAy-oC-HHx" userLabel="Xylo Button">
-                                                <rect key="frame" x="44.333333333333329" y="153.33333333333334" width="180.33333333333337" height="86.666666666666657"/>
+                                                <rect key="frame" x="30.333333333333314" y="133.66666666666666" width="180.33333333333334" height="86.666666666666657"/>
                                                 <state key="normal" image="XyloHome"/>
                                                 <connections>
                                                     <action selector="xyloButtonPressed:" destination="nWl-pk-UKY" eventType="touchUpInside" id="1wF-Oa-qtH"/>
@@ -66,10 +66,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7H-88-xBi" userLabel="Right View">
-                                        <rect key="frame" x="539.33333333333337" y="0.0" width="268.66666666666663" height="393"/>
+                                        <rect key="frame" x="483.33333333333343" y="0.0" width="240.66666666666669" height="354"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="XYt-dQ-Qeq">
-                                                <rect key="frame" x="47.333333333333258" y="108.66666666666669" width="174" height="176"/>
+                                                <rect key="frame" x="33.333333333333258" y="89" width="174" height="176"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xr5-1P-OEv" userLabel="Fruits Button">
                                                         <rect key="frame" x="0.0" y="0.0" width="174" height="71.333333333333329"/>
@@ -79,7 +79,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFc-vH-icE" userLabel="Veges Button">
-                                                        <rect key="frame" x="0.0" y="121.33333333333333" width="174" height="54.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="121.33333333333336" width="174" height="54.666666666666671"/>
                                                         <state key="normal" image="VegeHome"/>
                                                         <connections>
                                                             <action selector="vegesButtonPressed:" destination="nWl-pk-UKY" eventType="touchUpInside" id="vC5-Pt-oTD"/>
@@ -119,21 +119,24 @@
             <objects>
                 <viewController storyboardIdentifier="colourVC" id="BYZ-38-t0r" customClass="ColorsViewController" customModule="XyloLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ygp-JJ-zB4">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normalBackground" translatesAutoresizingMaskIntoConstraints="NO" id="emV-q0-hNS">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eoq-sB-n0Z">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <rect key="frame" x="44" y="0.0" width="724" height="354"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zui-Yu-UJY" userLabel="Red">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P23-Xg-tZQ" userLabel="1">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="209"/>
-                                                <state key="normal" image="red"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="170"/>
+                                                <state key="normal" title="1" image="red"/>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypI-Sj-qkp"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -144,11 +147,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWs-on-RVI" userLabel="Orange">
-                                        <rect key="frame" x="116" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="104" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLJ-4p-A3c" userLabel="2">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="204"/>
-                                                <state key="normal" image="orange"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="165"/>
+                                                <state key="normal" title="2" image="orange"/>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNE-Gq-AYT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -159,11 +165,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mK6-Sq-Cit" userLabel="Blue">
-                                        <rect key="frame" x="232" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="208" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HH-DY-bI4" userLabel="3">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="199"/>
-                                                <state key="normal" image="blue"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="160"/>
+                                                <state key="normal" title="3" image="blue"/>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWg-LY-0ZL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -174,11 +183,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgO-g2-4yV" userLabel="Green">
-                                        <rect key="frame" x="348" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="312" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK3-WQ-N7t" userLabel="4">
                                                 <rect key="frame" x="0.0" y="86" width="112" height="194"/>
-                                                <state key="normal" title="\" image="green"/>
+                                                <state key="normal" title="4" image="green"/>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2XS-AY-BaG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -189,11 +201,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2p8-CM-3Vy" userLabel="Purple">
-                                        <rect key="frame" x="464" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="416" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FV5-vb-Iql" userLabel="5">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="189"/>
-                                                <state key="normal" title="\" image="purple"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="150"/>
+                                                <state key="normal" title="5" image="purple"/>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gLO-pa-aKP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -204,11 +219,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFx-qL-bS7" userLabel="Yellow">
-                                        <rect key="frame" x="580" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="520" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZr-3u-BMh" userLabel="6">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="184"/>
-                                                <state key="normal" title="\" image="yellow"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="145"/>
+                                                <state key="normal" title="6" image="yellow"/>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qgs-WF-OpO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -219,11 +237,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-jm-mCi" userLabel="Pink">
-                                        <rect key="frame" x="696" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="624" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRe-Ze-HUy" userLabel="7">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="179"/>
-                                                <state key="normal" title="\" image="pink"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="140"/>
+                                                <state key="normal" title="7" image="pink"/>
+                                                <connections>
+                                                    <action selector="colorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tpy-Mg-2CH"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -290,21 +311,24 @@
             <objects>
                 <viewController storyboardIdentifier="vegetableVC" id="VWv-YI-A49" customClass="VegetablesViewController" customModule="XyloLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="27F-1t-Itm">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normalBackground" translatesAutoresizingMaskIntoConstraints="NO" id="HKL-JS-j92">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="P11-Fp-Czc">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <rect key="frame" x="44" y="0.0" width="724" height="354"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zx9-wN-0hN" userLabel="Red">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4Z-si-kmc" userLabel="1">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="209"/>
-                                                <state key="normal" image="red"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="170"/>
+                                                <state key="normal" title="1" image="red"/>
+                                                <connections>
+                                                    <action selector="vegetablePressed:" destination="VWv-YI-A49" eventType="touchUpInside" id="KYI-Lt-GNu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -315,11 +339,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98s-wC-AN7" userLabel="Orange">
-                                        <rect key="frame" x="116" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="104" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cx-AZ-Ebg" userLabel="2">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="204"/>
-                                                <state key="normal" image="orange"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="165"/>
+                                                <state key="normal" title="2" image="orange"/>
+                                                <connections>
+                                                    <action selector="vegetablePressed:" destination="VWv-YI-A49" eventType="touchUpInside" id="Ex9-Ty-blA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -330,11 +357,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sX-Ly-mXm" userLabel="Blue">
-                                        <rect key="frame" x="232" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="208" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOG-73-OxR" userLabel="3">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="199"/>
-                                                <state key="normal" image="blue"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="160"/>
+                                                <state key="normal" title="3" image="blue"/>
+                                                <connections>
+                                                    <action selector="vegetablePressed:" destination="VWv-YI-A49" eventType="touchUpInside" id="BV5-St-H6I"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -345,11 +375,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAf-WD-8TM" userLabel="Green">
-                                        <rect key="frame" x="348" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="312" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vr-Fh-4zs" userLabel="4">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="194"/>
-                                                <state key="normal" title="\" image="green"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="155"/>
+                                                <state key="normal" title="4" image="green"/>
+                                                <connections>
+                                                    <action selector="vegetablePressed:" destination="VWv-YI-A49" eventType="touchUpInside" id="wXG-bl-Gk2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -360,11 +393,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-TW-nkv" userLabel="Purple">
-                                        <rect key="frame" x="464" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="416" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3N-LT-izl" userLabel="5">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="189"/>
-                                                <state key="normal" title="\" image="purple"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="150"/>
+                                                <state key="normal" title="5" image="purple"/>
+                                                <connections>
+                                                    <action selector="vegetablePressed:" destination="VWv-YI-A49" eventType="touchUpInside" id="hVs-AD-anP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -375,11 +411,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Kt-UM-jMc" userLabel="Yellow">
-                                        <rect key="frame" x="580" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="520" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNm-EN-BZU" userLabel="6">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="184"/>
-                                                <state key="normal" title="\" image="yellow"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="145"/>
+                                                <state key="normal" title="6" image="yellow"/>
+                                                <connections>
+                                                    <action selector="vegetablePressed:" destination="VWv-YI-A49" eventType="touchUpInside" id="AL9-6N-7np"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -390,11 +429,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AL8-bt-Z5D" userLabel="Pink">
-                                        <rect key="frame" x="696" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="624" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqm-mh-Jqe" userLabel="7">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="179"/>
-                                                <state key="normal" title="\" image="pink"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="140"/>
+                                                <state key="normal" title="7" image="pink"/>
+                                                <connections>
+                                                    <action selector="vegetablePressed:" destination="VWv-YI-A49" eventType="touchUpInside" id="8UI-47-a6Q"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -460,7 +502,7 @@
             <objects>
                 <viewController storyboardIdentifier="StartUp" id="1hf-es-qLe" customClass="StartupPageViewController" customModule="XyloLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jVX-Dz-69d">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Nv-b9-1nN">
@@ -490,21 +532,24 @@
             <objects>
                 <viewController storyboardIdentifier="fruitVC" id="soR-e1-11K" customClass="FruitsViewController" customModule="XyloLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZRW-sC-Pfw">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normalBackground" translatesAutoresizingMaskIntoConstraints="NO" id="vSc-jB-la4">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zt8-MW-4Ni">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <rect key="frame" x="44" y="0.0" width="724" height="354"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQf-TH-P3c" userLabel="Red">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLx-2K-qxl" userLabel="1">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="209"/>
-                                                <state key="normal" image="red"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="170"/>
+                                                <state key="normal" title="1" image="red"/>
+                                                <connections>
+                                                    <action selector="fruitPressed:" destination="soR-e1-11K" eventType="touchUpInside" id="wbv-29-0b3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -515,11 +560,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5k-vd-cSH" userLabel="Orange">
-                                        <rect key="frame" x="116" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="104" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-If-Q3f" userLabel="2">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="204"/>
-                                                <state key="normal" image="orange"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="165"/>
+                                                <state key="normal" title="2" image="orange"/>
+                                                <connections>
+                                                    <action selector="fruitPressed:" destination="soR-e1-11K" eventType="touchUpInside" id="EvD-aI-PGy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -530,11 +578,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiA-mP-265" userLabel="Blue">
-                                        <rect key="frame" x="232" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="208" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nx1-xF-51z" userLabel="3">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="199"/>
-                                                <state key="normal" image="blue"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="160"/>
+                                                <state key="normal" title="3" image="blue"/>
+                                                <connections>
+                                                    <action selector="fruitPressed:" destination="soR-e1-11K" eventType="touchUpInside" id="Nxc-sN-v3n"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -545,11 +596,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="toG-Qd-PJT" userLabel="Green">
-                                        <rect key="frame" x="348" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="312" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIN-kd-ifT" userLabel="4">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="194"/>
-                                                <state key="normal" title="\" image="green"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="155"/>
+                                                <state key="normal" title="4" image="green"/>
+                                                <connections>
+                                                    <action selector="fruitPressed:" destination="soR-e1-11K" eventType="touchUpInside" id="DYu-gU-sBu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -560,11 +614,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHg-45-VPv" userLabel="Purple">
-                                        <rect key="frame" x="464" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="416" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8G-zR-YNJ" userLabel="5">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="189"/>
-                                                <state key="normal" title="\" image="purple"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="150"/>
+                                                <state key="normal" title="5" image="purple"/>
+                                                <connections>
+                                                    <action selector="fruitPressed:" destination="soR-e1-11K" eventType="touchUpInside" id="ZCd-c4-dDL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -575,11 +632,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ft-IH-543" userLabel="Yellow">
-                                        <rect key="frame" x="580" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="520" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1i-dI-UV6" userLabel="6">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="184"/>
-                                                <state key="normal" title="\" image="yellow"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="145"/>
+                                                <state key="normal" title="6" image="yellow"/>
+                                                <connections>
+                                                    <action selector="fruitPressed:" destination="soR-e1-11K" eventType="touchUpInside" id="I3R-G8-qKH"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -590,11 +650,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYw-Mu-Fsd" userLabel="Pink">
-                                        <rect key="frame" x="696" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="624" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcL-Lm-Btu" userLabel="7">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="179"/>
-                                                <state key="normal" title="\" image="pink"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="140"/>
+                                                <state key="normal" title="7" image="pink"/>
+                                                <connections>
+                                                    <action selector="fruitPressed:" destination="soR-e1-11K" eventType="touchUpInside" id="8UQ-rf-W0h"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -675,21 +738,24 @@
             <objects>
                 <viewController storyboardIdentifier="animalVC" id="DUF-V6-NY3" customClass="AnimalsViewController" customModule="XyloLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BKf-ft-inv">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normalBackground" translatesAutoresizingMaskIntoConstraints="NO" id="IWK-4V-upr">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZbS-GR-96Q">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <rect key="frame" x="44" y="0.0" width="724" height="354"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEP-Lw-7jf" userLabel="Red">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8i8-Yz-DPr" userLabel="1">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="209"/>
-                                                <state key="normal" image="red"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="170"/>
+                                                <state key="normal" title="1" image="red"/>
+                                                <connections>
+                                                    <action selector="animalPressed:" destination="DUF-V6-NY3" eventType="touchUpInside" id="ifg-kc-gLk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -700,11 +766,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCj-2e-BbS" userLabel="Orange">
-                                        <rect key="frame" x="116" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="104" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCf-qm-xAe" userLabel="2">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="204"/>
-                                                <state key="normal" image="orange"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="165"/>
+                                                <state key="normal" title="2" image="orange"/>
+                                                <connections>
+                                                    <action selector="animalPressed:" destination="DUF-V6-NY3" eventType="touchUpInside" id="a6V-Po-npF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -715,11 +784,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rj-p9-C7c" userLabel="Blue">
-                                        <rect key="frame" x="232" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="208" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XE6-dz-r8l" userLabel="3">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="199"/>
-                                                <state key="normal" image="blue"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="160"/>
+                                                <state key="normal" title="3" image="blue"/>
+                                                <connections>
+                                                    <action selector="animalPressed:" destination="DUF-V6-NY3" eventType="touchUpInside" id="PM6-Xw-bTN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -730,11 +802,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Odk-Vl-aB3" userLabel="Green">
-                                        <rect key="frame" x="348" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="312" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgT-SH-aC0" userLabel="4">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="194"/>
-                                                <state key="normal" title="\" image="green"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="155"/>
+                                                <state key="normal" title="4" image="green"/>
+                                                <connections>
+                                                    <action selector="animalPressed:" destination="DUF-V6-NY3" eventType="touchUpInside" id="dej-Wn-STL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -745,11 +820,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFo-gf-zMt" userLabel="Purple">
-                                        <rect key="frame" x="464" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="416" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4u-Ix-qau" userLabel="5">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="189"/>
-                                                <state key="normal" title="\" image="purple"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="150"/>
+                                                <state key="normal" title="5" image="purple"/>
+                                                <connections>
+                                                    <action selector="animalPressed:" destination="DUF-V6-NY3" eventType="touchUpInside" id="eoO-ZQ-gPf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -760,11 +838,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYI-0O-fU9" userLabel="Yellow">
-                                        <rect key="frame" x="580" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="520" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12n-IU-FpF" userLabel="6">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="184"/>
-                                                <state key="normal" title="\" image="yellow"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="145"/>
+                                                <state key="normal" title="6" image="yellow"/>
+                                                <connections>
+                                                    <action selector="animalPressed:" destination="DUF-V6-NY3" eventType="touchUpInside" id="PX2-4R-vhI"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -775,11 +856,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfZ-5E-g72" userLabel="Pink">
-                                        <rect key="frame" x="696" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="624" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWj-fu-ubc" userLabel="7">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="179"/>
-                                                <state key="normal" title="\" image="pink"/>
+                                                <rect key="frame" x="0.0" y="85" width="100" height="140"/>
+                                                <state key="normal" title="7" image="pink"/>
+                                                <connections>
+                                                    <action selector="animalPressed:" destination="DUF-V6-NY3" eventType="touchUpInside" id="1ft-TC-Da4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -843,23 +927,26 @@
         <!--Xylo View Controller-->
         <scene sceneID="TZZ-1U-890">
             <objects>
-                <viewController id="Vbw-qU-jhM" customClass="xyloViewController" customModule="XyloLearn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="xyloVC" id="Vbw-qU-jhM" customClass="xyloViewController" customModule="XyloLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gcr-ZP-vl0">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normalBackground" translatesAutoresizingMaskIntoConstraints="NO" id="QXl-rQ-Spy">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JgN-0u-h9z">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <rect key="frame" x="44" y="0.0" width="724" height="354"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcC-W7-tIP" userLabel="Red">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="354"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhL-zR-we9" userLabel="1">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="209"/>
-                                                <state key="normal" image="red"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhL-zR-we9" userLabel="C">
+                                                <rect key="frame" x="0.0" y="85" width="100" height="170"/>
+                                                <state key="normal" title="C" image="red"/>
+                                                <connections>
+                                                    <action selector="xyloKeyPressed:" destination="Vbw-qU-jhM" eventType="touchUpInside" id="Ih1-Iv-51i"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -870,11 +957,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDj-Ra-y4U" userLabel="Orange">
-                                        <rect key="frame" x="116" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="104" y="0.0" width="100" height="354"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMZ-CY-MXL" userLabel="2">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="204"/>
-                                                <state key="normal" image="orange"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMZ-CY-MXL" userLabel="D">
+                                                <rect key="frame" x="0.0" y="85" width="100" height="165"/>
+                                                <state key="normal" title="D" image="orange"/>
+                                                <connections>
+                                                    <action selector="xyloKeyPressed:" destination="Vbw-qU-jhM" eventType="touchUpInside" id="yBe-3f-a8Y"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -885,11 +975,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sB9-M1-Yt0" userLabel="Blue">
-                                        <rect key="frame" x="232" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="208" y="0.0" width="100" height="354"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzR-yz-fHc" userLabel="3">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="199"/>
-                                                <state key="normal" image="blue"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzR-yz-fHc" userLabel="E">
+                                                <rect key="frame" x="0.0" y="85" width="100" height="160"/>
+                                                <state key="normal" title="E" image="blue"/>
+                                                <connections>
+                                                    <action selector="xyloKeyPressed:" destination="Vbw-qU-jhM" eventType="touchUpInside" id="fkG-Qg-WPs"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -900,11 +993,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHz-5B-FO9" userLabel="Green">
-                                        <rect key="frame" x="348" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="312" y="0.0" width="100" height="354"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDM-NM-l5r" userLabel="4">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="194"/>
-                                                <state key="normal" title="\" image="green"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDM-NM-l5r" userLabel="F">
+                                                <rect key="frame" x="0.0" y="85" width="100" height="155"/>
+                                                <state key="normal" title="F" image="green"/>
+                                                <connections>
+                                                    <action selector="xyloKeyPressed:" destination="Vbw-qU-jhM" eventType="touchUpInside" id="e6t-ON-aGx"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -915,11 +1011,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NuV-3e-wAl" userLabel="Purple">
-                                        <rect key="frame" x="464" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="416" y="0.0" width="100" height="354"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ug0-uj-ZgZ" userLabel="5">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="189"/>
-                                                <state key="normal" title="\" image="purple"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ug0-uj-ZgZ" userLabel="G">
+                                                <rect key="frame" x="0.0" y="85" width="100" height="150"/>
+                                                <state key="normal" title="G" image="purple"/>
+                                                <connections>
+                                                    <action selector="xyloKeyPressed:" destination="Vbw-qU-jhM" eventType="touchUpInside" id="7g5-qQ-UMm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -930,11 +1029,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ru5-0g-KEK" userLabel="Yellow">
-                                        <rect key="frame" x="580" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="520" y="0.0" width="100" height="354"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spB-iZ-dBn" userLabel="6">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="184"/>
-                                                <state key="normal" title="\" image="yellow"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spB-iZ-dBn" userLabel="A">
+                                                <rect key="frame" x="0.0" y="85" width="100" height="145"/>
+                                                <state key="normal" title="A" image="yellow"/>
+                                                <connections>
+                                                    <action selector="xyloKeyPressed:" destination="Vbw-qU-jhM" eventType="touchUpInside" id="2pd-xZ-Fzp"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -945,11 +1047,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="no2-LX-doL" userLabel="Pink">
-                                        <rect key="frame" x="696" y="0.0" width="112" height="393"/>
+                                        <rect key="frame" x="624" y="0.0" width="100" height="354"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1S-XJ-SnN" userLabel="7">
-                                                <rect key="frame" x="0.0" y="85" width="112" height="179"/>
-                                                <state key="normal" title="\" image="pink"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1S-XJ-SnN" userLabel="B">
+                                                <rect key="frame" x="0.0" y="85" width="100" height="140"/>
+                                                <state key="normal" title="B" image="pink"/>
+                                                <connections>
+                                                    <action selector="xyloKeyPressed:" destination="Vbw-qU-jhM" eventType="touchUpInside" id="Dpz-QN-XRe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -1009,6 +1114,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="on4-YX-2hk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="366" y="138"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="5SZ-NX-SKh">
+            <objects>
+                <viewController storyboardIdentifier="popUpID" id="gHJ-T9-bop" customClass="PopUpViewController" customModule="XyloLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4TR-PS-WoR">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uv4-21-DAx">
+                                <rect key="frame" x="44" y="0.0" width="724" height="354"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aTY-dA-aCZ">
+                                        <rect key="frame" x="20" y="20" width="684" height="314"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="aTY-dA-aCZ" firstAttribute="top" secondItem="uv4-21-DAx" secondAttribute="top" constant="20" id="N62-ai-5Uf"/>
+                                    <constraint firstItem="aTY-dA-aCZ" firstAttribute="leading" secondItem="uv4-21-DAx" secondAttribute="leading" constant="20" id="bT0-pv-S19"/>
+                                    <constraint firstAttribute="trailing" secondItem="aTY-dA-aCZ" secondAttribute="trailing" constant="20" id="oEr-AQ-Sa7"/>
+                                    <constraint firstAttribute="bottom" secondItem="aTY-dA-aCZ" secondAttribute="bottom" constant="20" id="w5k-al-R9M"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="uv4-21-DAx" firstAttribute="bottom" secondItem="xMY-2d-wD0" secondAttribute="bottom" id="TGr-Qd-dhr"/>
+                            <constraint firstItem="xMY-2d-wD0" firstAttribute="trailing" secondItem="uv4-21-DAx" secondAttribute="trailing" id="Z9B-Tk-9ZX"/>
+                            <constraint firstItem="uv4-21-DAx" firstAttribute="top" secondItem="xMY-2d-wD0" secondAttribute="top" id="nlQ-FN-cFS"/>
+                            <constraint firstItem="uv4-21-DAx" firstAttribute="leading" secondItem="xMY-2d-wD0" secondAttribute="leading" id="tjl-qd-nTC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xMY-2d-wD0"/>
+                    </view>
+                    <connections>
+                        <outlet property="customView" destination="4TR-PS-WoR" id="zVJ-YH-6Gj"/>
+                        <outlet property="gif" destination="aTY-dA-aCZ" id="Bqu-kN-oeE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FSI-ea-PvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766.25615763546796" y="1256.8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YrW-r2-Ne0">

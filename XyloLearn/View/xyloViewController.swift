@@ -12,6 +12,14 @@ class xyloViewController: UIViewController {
         
     }
     
+    @IBAction func homePressed(_ sender: UIButton) {
+        
+        let hVC = self.storyboard?.instantiateViewController(withIdentifier: "Home") as! HomePageViewController
+        
+        self.navigationController?.pushViewController(hVC, animated: false)
+    }
+    
+    
     @IBAction func xyloKeyPressed(_ sender: UIButton) {
         
              playSound(soundName: sender.currentTitle!)

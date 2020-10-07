@@ -186,7 +186,7 @@
                                         <rect key="frame" x="312" y="0.0" width="100" height="354"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK3-WQ-N7t" userLabel="4">
-                                                <rect key="frame" x="0.0" y="86" width="112" height="194"/>
+                                                <rect key="frame" x="0.0" y="86" width="100" height="155"/>
                                                 <state key="normal" title="4" image="green"/>
                                                 <connections>
                                                     <action selector="colorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2XS-AY-BaG"/>
@@ -246,11 +246,22 @@
                                                     <action selector="colorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tpy-Mg-2CH"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIX-ak-Vyy" userLabel="Home">
+                                                <rect key="frame" x="0.0" y="2" width="82" height="38"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="homePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWQ-L3-P35"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="HRe-Ze-HUy" secondAttribute="bottom" constant="129" id="1ig-aw-P8g"/>
+                                            <constraint firstAttribute="trailing" secondItem="aIX-ak-Vyy" secondAttribute="trailing" constant="18" id="2s6-ZP-zmw"/>
+                                            <constraint firstItem="HRe-Ze-HUy" firstAttribute="top" secondItem="aIX-ak-Vyy" secondAttribute="bottom" constant="45" id="4ZB-Ze-A6m"/>
                                             <constraint firstItem="HRe-Ze-HUy" firstAttribute="top" secondItem="NeQ-jm-mCi" secondAttribute="top" constant="85" id="GOr-OS-fsA"/>
+                                            <constraint firstItem="aIX-ak-Vyy" firstAttribute="top" secondItem="NeQ-jm-mCi" secondAttribute="top" constant="2" id="Jvm-5x-aUg"/>
                                             <constraint firstAttribute="trailing" secondItem="HRe-Ze-HUy" secondAttribute="trailing" id="K7v-En-uNg"/>
+                                            <constraint firstItem="aIX-ak-Vyy" firstAttribute="leading" secondItem="NeQ-jm-mCi" secondAttribute="leading" id="hEo-Ox-8v8"/>
                                             <constraint firstItem="HRe-Ze-HUy" firstAttribute="leading" secondItem="NeQ-jm-mCi" secondAttribute="leading" id="m9g-W4-xuq"/>
                                         </constraints>
                                     </view>
@@ -304,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-897.32142857142856" y="1257.9710144927537"/>
+            <point key="canvasLocation" x="-897.78325123152717" y="1256.8"/>
         </scene>
         <!--Vegetables View Controller-->
         <scene sceneID="GQm-sr-rFY">
@@ -438,10 +449,21 @@
                                                     <action selector="vegetablePressed:" destination="VWv-YI-A49" eventType="touchUpInside" id="8UI-47-a6Q"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Md-mD-8rI" userLabel="Home">
+                                                <rect key="frame" x="0.0" y="2" width="82" height="38"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="homePressed:" destination="VWv-YI-A49" eventType="touchUpInside" id="Cjl-WX-OiS"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Eqm-mh-Jqe" secondAttribute="trailing" id="5Yg-O6-e7a"/>
+                                            <constraint firstItem="0Md-mD-8rI" firstAttribute="top" secondItem="AL8-bt-Z5D" secondAttribute="top" constant="2" id="BhM-Ad-jFM"/>
+                                            <constraint firstItem="0Md-mD-8rI" firstAttribute="leading" secondItem="AL8-bt-Z5D" secondAttribute="leading" id="C6L-s3-kIn"/>
+                                            <constraint firstItem="Eqm-mh-Jqe" firstAttribute="top" secondItem="0Md-mD-8rI" secondAttribute="bottom" constant="45" id="F6B-uY-7KT"/>
                                             <constraint firstItem="Eqm-mh-Jqe" firstAttribute="top" secondItem="AL8-bt-Z5D" secondAttribute="top" constant="85" id="Y3x-2G-dxM"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Md-mD-8rI" secondAttribute="trailing" constant="18" id="a0H-zW-EtT"/>
                                             <constraint firstItem="Eqm-mh-Jqe" firstAttribute="leading" secondItem="AL8-bt-Z5D" secondAttribute="leading" id="kQ2-Jz-W8o"/>
                                             <constraint firstAttribute="bottom" secondItem="Eqm-mh-Jqe" secondAttribute="bottom" constant="129" id="mAd-Ve-cPG"/>
                                         </constraints>
@@ -659,12 +681,26 @@
                                                     <action selector="fruitPressed:" destination="soR-e1-11K" eventType="touchUpInside" id="8UQ-rf-W0h"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uz-wZ-0Jz" userLabel="Home">
+                                                <rect key="frame" x="0.0" y="2" width="82" height="38"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                <state key="normal" title="HOME">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="homePressed:" destination="soR-e1-11K" eventType="touchUpInside" id="H2Q-6I-sWL"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="9uz-wZ-0Jz" firstAttribute="leading" secondItem="qYw-Mu-Fsd" secondAttribute="leading" id="9Wq-WG-h4Z"/>
+                                            <constraint firstItem="9uz-wZ-0Jz" firstAttribute="top" secondItem="qYw-Mu-Fsd" secondAttribute="top" constant="2" id="TKx-xe-6N7"/>
                                             <constraint firstItem="hcL-Lm-Btu" firstAttribute="leading" secondItem="qYw-Mu-Fsd" secondAttribute="leading" id="Zi8-lv-NAu"/>
+                                            <constraint firstItem="hcL-Lm-Btu" firstAttribute="top" secondItem="9uz-wZ-0Jz" secondAttribute="bottom" constant="45" id="d6W-YY-C2p"/>
                                             <constraint firstAttribute="trailing" secondItem="hcL-Lm-Btu" secondAttribute="trailing" id="lpu-nI-XZq"/>
                                             <constraint firstItem="hcL-Lm-Btu" firstAttribute="top" secondItem="qYw-Mu-Fsd" secondAttribute="top" constant="85" id="mmJ-8q-c9z"/>
                                             <constraint firstAttribute="bottom" secondItem="hcL-Lm-Btu" secondAttribute="bottom" constant="129" id="mtF-f1-qal"/>
+                                            <constraint firstAttribute="trailing" secondItem="9uz-wZ-0Jz" secondAttribute="trailing" constant="18" id="rtd-FM-ihR"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -865,12 +901,23 @@
                                                     <action selector="animalPressed:" destination="DUF-V6-NY3" eventType="touchUpInside" id="1ft-TC-Da4"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDI-Ku-ian" userLabel="Home">
+                                                <rect key="frame" x="0.0" y="2" width="82" height="38"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="homePressed:" destination="DUF-V6-NY3" eventType="touchUpInside" id="xTC-59-9zt"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="mWj-fu-ubc" secondAttribute="bottom" constant="129" id="49z-J3-cmz"/>
+                                            <constraint firstItem="mWj-fu-ubc" firstAttribute="top" secondItem="sDI-Ku-ian" secondAttribute="bottom" constant="45" id="5gG-ha-2Ab"/>
                                             <constraint firstAttribute="trailing" secondItem="mWj-fu-ubc" secondAttribute="trailing" id="9oA-Wg-vHO"/>
+                                            <constraint firstItem="sDI-Ku-ian" firstAttribute="top" secondItem="tfZ-5E-g72" secondAttribute="top" constant="2" id="BTV-0T-TcP"/>
                                             <constraint firstItem="mWj-fu-ubc" firstAttribute="top" secondItem="tfZ-5E-g72" secondAttribute="top" constant="85" id="Ibt-Vx-gBL"/>
+                                            <constraint firstAttribute="trailing" secondItem="sDI-Ku-ian" secondAttribute="trailing" constant="18" id="lN1-sv-TaZ"/>
                                             <constraint firstItem="mWj-fu-ubc" firstAttribute="leading" secondItem="tfZ-5E-g72" secondAttribute="leading" id="r1T-mX-A2e"/>
+                                            <constraint firstItem="sDI-Ku-ian" firstAttribute="leading" secondItem="tfZ-5E-g72" secondAttribute="leading" id="yn2-v9-xBw"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1056,11 +1103,22 @@
                                                     <action selector="xyloKeyPressed:" destination="Vbw-qU-jhM" eventType="touchUpInside" id="Dpz-QN-XRe"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk5-hm-Upg" userLabel="Home">
+                                                <rect key="frame" x="0.0" y="2" width="82" height="38"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="homePressed:" destination="Vbw-qU-jhM" eventType="touchUpInside" id="ab5-aA-TbV"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="w1S-XJ-SnN" firstAttribute="leading" secondItem="no2-LX-doL" secondAttribute="leading" id="8mI-0E-mN3"/>
+                                            <constraint firstItem="fk5-hm-Upg" firstAttribute="top" secondItem="no2-LX-doL" secondAttribute="top" constant="2" id="DbR-Ny-NTn"/>
                                             <constraint firstAttribute="bottom" secondItem="w1S-XJ-SnN" secondAttribute="bottom" constant="129" id="INb-Ne-Wnx"/>
+                                            <constraint firstAttribute="trailing" secondItem="fk5-hm-Upg" secondAttribute="trailing" constant="18" id="ORN-qw-VKQ"/>
                                             <constraint firstItem="w1S-XJ-SnN" firstAttribute="top" secondItem="no2-LX-doL" secondAttribute="top" constant="85" id="bnZ-SX-NU0"/>
+                                            <constraint firstItem="w1S-XJ-SnN" firstAttribute="top" secondItem="fk5-hm-Upg" secondAttribute="bottom" constant="45" id="eqq-WW-x5Y"/>
+                                            <constraint firstItem="fk5-hm-Upg" firstAttribute="leading" secondItem="no2-LX-doL" secondAttribute="leading" id="nhk-7e-hIT"/>
                                             <constraint firstAttribute="trailing" secondItem="w1S-XJ-SnN" secondAttribute="trailing" id="tsz-0d-Opv"/>
                                         </constraints>
                                     </view>

@@ -10,6 +10,8 @@ class AnimalsViewController: UIViewController{
         super.viewDidLoad()
     }
     
+    //MARK:- Home Button function
+    
     @IBAction func homePressed(_ sender: UIButton) {
         
         let hVC = self.storyboard?.instantiateViewController(withIdentifier: "Home") as! HomePageViewController
@@ -17,10 +19,9 @@ class AnimalsViewController: UIViewController{
         self.navigationController?.pushViewController(hVC, animated: false)
     }
     
+    //MARK:- Button for Animals & Custom Alert Initialization
     
     @IBAction func animalPressed(_ sender: UIButton) {
-        
-        //MARK:- Custom Alert Initialization
         
         let customAlert = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popUpID") as! PopUpViewController
         
@@ -54,7 +55,7 @@ class AnimalsViewController: UIViewController{
             imageView.loadGif(name: "animatedLion")
         }
         else if sender.currentTitle == "6" {
-            imageView.loadGif(name: "animatedKangaroo")
+            imageView.loadGif(name: "animatedDog")
         }
         else {
             imageView.loadGif(name: "animatedFrog")
@@ -67,6 +68,7 @@ class AnimalsViewController: UIViewController{
         imageView.trailingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         imageView.topAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.topAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        
     }
 }
 

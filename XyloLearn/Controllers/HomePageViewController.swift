@@ -49,5 +49,20 @@ class HomePageViewController: UIViewController {
                self.navigationController?.pushViewController(vVC, animated: false)
     }
     
+    @IBAction func shapesButtonPressed(_ sender: UIButton) {
+        
+        let sVC = self.storyboard?.instantiateViewController(withIdentifier: "shapesVC") as! ShapesViewController
+               
+               self.navigationController?.pushViewController(sVC, animated: false)
+        
+    }
+    
+    @IBAction func numbersButtonPressed(_ sender: UIButton) {
+        
+        let nVC = self.storyboard?.instantiateViewController(withIdentifier: "numbersVC") as! NumbersViewController
+               
+               self.navigationController?.pushViewController(nVC, animated: false)
+        
+    }
     
 }

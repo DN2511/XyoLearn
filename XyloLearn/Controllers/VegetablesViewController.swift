@@ -5,11 +5,12 @@ import UIKit
 import ImageIO
 
 class VegetablesViewController: UIViewController {
- 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    //MARK:- Home Button function
     
     @IBAction func homePressed(_ sender: UIButton) {
         
@@ -18,9 +19,9 @@ class VegetablesViewController: UIViewController {
         self.navigationController?.pushViewController(hVC, animated: false)
     }
     
+    //MARK:- Button for Vegetables & Custom Alert Initialization
+    
     @IBAction func vegetablePressed(_ sender: UIButton) {
-        
-        //MARK:- Custom Alert Initialization
         
         let customAlert = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popUpID") as! PopUpViewController
         

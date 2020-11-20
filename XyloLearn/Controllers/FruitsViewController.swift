@@ -10,6 +10,8 @@ class FruitsViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    //MARK:- Home Button function
+    
     @IBAction func homePressed(_ sender: UIButton) {
         
         let hVC = self.storyboard?.instantiateViewController(withIdentifier: "Home") as! HomePageViewController
@@ -17,9 +19,9 @@ class FruitsViewController: UIViewController {
         self.navigationController?.pushViewController(hVC, animated: false)
     }
     
+    //MARK:- Button for Fruits & Custom Alert Initialization
+    
     @IBAction func fruitPressed(_ sender: UIButton) {
-        
-        //MARK:- Custom Alert Initialization
         
         let customAlert = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popUpID") as! PopUpViewController
         

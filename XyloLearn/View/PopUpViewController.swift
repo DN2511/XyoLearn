@@ -9,18 +9,19 @@
 
 import UIKit
 import ImageIO
+import AVFoundation
 
 class PopUpViewController: UIViewController {
     
     var timeLeft = 0
     var myTimer = Timer()
-
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //MARK:- Timer for removing the view
 
-        myTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(PopUpViewController.timerRunning), userInfo: nil, repeats: true)
+        myTimer = Timer.scheduledTimer(timeInterval: 25.0, target: self, selector: #selector(PopUpViewController.timerRunning), userInfo: nil, repeats: true)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -31,9 +32,20 @@ class PopUpViewController: UIViewController {
     @IBOutlet var customView: UIView!
     @IBOutlet var gif: UIImageView!
     
+    override func viewWillDisappear(_ animated: Bool) {
+        player?.stop()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     //MARK:- Timer Function
     
     @objc func timerRunning() {
         self.view.removeFromSuperview()
     }
 }
+
+

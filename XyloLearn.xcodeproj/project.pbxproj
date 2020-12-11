@@ -28,9 +28,40 @@
 		210ADFE324A357580054E861 /* animatedBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 210ADFDC24A357580054E861 /* animatedBunny.gif */; };
 		210ADFE424A357580054E861 /* animatedFrog.gif in Resources */ = {isa = PBXBuildFile; fileRef = 210ADFDD24A357580054E861 /* animatedFrog.gif */; };
 		210ADFE524A357580054E861 /* animatedGoat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 210ADFDE24A357580054E861 /* animatedGoat.gif */; };
+		2118D64C2575DD3900A373D2 /* Apple1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D64B2575DD3900A373D2 /* Apple1.wav */; };
+		2118D64F2575DD9600A373D2 /* Fish.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D64E2575DD9600A373D2 /* Fish.wav */; };
+		2118D66E2575E28800A373D2 /* Fish1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6512575E28500A373D2 /* Fish1.wav */; };
+		2118D66F2575E28800A373D2 /* Frog.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6522575E28500A373D2 /* Frog.wav */; };
+		2118D6702575E28800A373D2 /* Apple2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6532575E28600A373D2 /* Apple2.wav */; };
+		2118D6712575E28800A373D2 /* Mushroom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6542575E28600A373D2 /* Mushroom.wav */; };
+		2118D6722575E28800A373D2 /* Blue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6552575E28600A373D2 /* Blue.wav */; };
+		2118D6732575E28800A373D2 /* Bunny.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6562575E28600A373D2 /* Bunny.wav */; };
+		2118D6742575E28800A373D2 /* Lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6572575E28600A373D2 /* Lion.wav */; };
+		2118D6752575E28800A373D2 /* Green1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6582575E28600A373D2 /* Green1.wav */; };
+		2118D6762575E28800A373D2 /* Xylolearn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6592575E28600A373D2 /* Xylolearn.wav */; };
+		2118D6772575E28800A373D2 /* Pear1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D65A2575E28600A373D2 /* Pear1.wav */; };
+		2118D6782575E28800A373D2 /* Peas.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D65B2575E28600A373D2 /* Peas.wav */; };
+		2118D6792575E28800A373D2 /* Cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D65C2575E28600A373D2 /* Cat.wav */; };
+		2118D67A2575E28800A373D2 /* Dog.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D65D2575E28700A373D2 /* Dog.wav */; };
+		2118D67B2575E28800A373D2 /* Grape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D65E2575E28700A373D2 /* Grape.wav */; };
+		2118D67C2575E28800A373D2 /* Pear2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D65F2575E28700A373D2 /* Pear2.wav */; };
+		2118D67D2575E28800A373D2 /* Grape1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6602575E28700A373D2 /* Grape1.wav */; };
+		2118D67E2575E28800A373D2 /* Kangaroo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6612575E28700A373D2 /* Kangaroo.wav */; };
+		2118D67F2575E28800A373D2 /* Green2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6622575E28700A373D2 /* Green2.wav */; };
+		2118D6802575E28800A373D2 /* Orange2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6632575E28700A373D2 /* Orange2.wav */; };
+		2118D6812575E28800A373D2 /* Goat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6642575E28700A373D2 /* Goat.wav */; };
+		2118D6822575E28800A373D2 /* Orange1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6652575E28700A373D2 /* Orange1.wav */; };
+		2118D6832575E28800A373D2 /* Monkey.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6662575E28800A373D2 /* Monkey.wav */; };
+		2118D6852575E28800A373D2 /* Broccoli.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6682575E28800A373D2 /* Broccoli.wav */; };
+		2118D6862575E28800A373D2 /* Kiwi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D6692575E28800A373D2 /* Kiwi.wav */; };
+		2118D6872575E28800A373D2 /* Capsicum.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D66A2575E28800A373D2 /* Capsicum.wav */; };
+		2118D6882575E28800A373D2 /* Strawberry1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D66B2575E28800A373D2 /* Strawberry1.wav */; };
+		2118D6892575E28800A373D2 /* Strawberry2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D66C2575E28800A373D2 /* Strawberry2.wav */; };
+		2118D68A2575E28800A373D2 /* Banana.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2118D66D2575E28800A373D2 /* Banana.wav */; };
 		212DB946248069E5000BF378 /* Swift+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212DB945248069E5000BF378 /* Swift+SpecialEffects.swift */; };
 		212DB94824806A14000BF378 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212DB94724806A14000BF378 /* Swift+Gif.swift */; };
 		212E413424D2B77400FBE319 /* StartupPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E413324D2B77400FBE319 /* StartupPageViewController.swift */; };
+		21336918257F3CB800CE7163 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21336917257F3CB800CE7163 /* Sound.swift */; };
 		2153D7A424D41A5D00466564 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153D7A324D41A5D00466564 /* HomePageViewController.swift */; };
 		215F55EC24DE62AD00FF401A /* homeGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 215F55EB24DE62AD00FF401A /* homeGif.gif */; };
 		215F55EE24DEBFEA00FF401A /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215F55ED24DEBFEA00FF401A /* UIButtonExtension.swift */; };
@@ -103,9 +134,40 @@
 		210ADFDC24A357580054E861 /* animatedBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = animatedBunny.gif; path = Images/GIFS/Animals/animatedBunny.gif; sourceTree = SOURCE_ROOT; };
 		210ADFDD24A357580054E861 /* animatedFrog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = animatedFrog.gif; path = Images/GIFS/Animals/animatedFrog.gif; sourceTree = SOURCE_ROOT; };
 		210ADFDE24A357580054E861 /* animatedGoat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = animatedGoat.gif; path = Images/GIFS/Animals/animatedGoat.gif; sourceTree = SOURCE_ROOT; };
+		2118D64B2575DD3900A373D2 /* Apple1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Apple1.wav; sourceTree = "<group>"; };
+		2118D64E2575DD9600A373D2 /* Fish.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Fish.wav; sourceTree = "<group>"; };
+		2118D6512575E28500A373D2 /* Fish1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Fish1.wav; path = ../../../../Downloads/Fish1.wav; sourceTree = "<group>"; };
+		2118D6522575E28500A373D2 /* Frog.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Frog.wav; sourceTree = "<group>"; };
+		2118D6532575E28600A373D2 /* Apple2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Apple2.wav; sourceTree = "<group>"; };
+		2118D6542575E28600A373D2 /* Mushroom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mushroom.wav; sourceTree = "<group>"; };
+		2118D6552575E28600A373D2 /* Blue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Blue.wav; sourceTree = "<group>"; };
+		2118D6562575E28600A373D2 /* Bunny.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bunny.wav; sourceTree = "<group>"; };
+		2118D6572575E28600A373D2 /* Lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Lion.wav; sourceTree = "<group>"; };
+		2118D6582575E28600A373D2 /* Green1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Green1.wav; sourceTree = "<group>"; };
+		2118D6592575E28600A373D2 /* Xylolearn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Xylolearn.wav; sourceTree = "<group>"; };
+		2118D65A2575E28600A373D2 /* Pear1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pear1.wav; sourceTree = "<group>"; };
+		2118D65B2575E28600A373D2 /* Peas.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Peas.wav; sourceTree = "<group>"; };
+		2118D65C2575E28600A373D2 /* Cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cat.wav; sourceTree = "<group>"; };
+		2118D65D2575E28700A373D2 /* Dog.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dog.wav; sourceTree = "<group>"; };
+		2118D65E2575E28700A373D2 /* Grape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Grape.wav; sourceTree = "<group>"; };
+		2118D65F2575E28700A373D2 /* Pear2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pear2.wav; sourceTree = "<group>"; };
+		2118D6602575E28700A373D2 /* Grape1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Grape1.wav; sourceTree = "<group>"; };
+		2118D6612575E28700A373D2 /* Kangaroo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Kangaroo.wav; sourceTree = "<group>"; };
+		2118D6622575E28700A373D2 /* Green2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Green2.wav; sourceTree = "<group>"; };
+		2118D6632575E28700A373D2 /* Orange2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Orange2.wav; sourceTree = "<group>"; };
+		2118D6642575E28700A373D2 /* Goat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Goat.wav; sourceTree = "<group>"; };
+		2118D6652575E28700A373D2 /* Orange1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Orange1.wav; sourceTree = "<group>"; };
+		2118D6662575E28800A373D2 /* Monkey.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Monkey.wav; sourceTree = "<group>"; };
+		2118D6682575E28800A373D2 /* Broccoli.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Broccoli.wav; sourceTree = "<group>"; };
+		2118D6692575E28800A373D2 /* Kiwi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Kiwi.wav; sourceTree = "<group>"; };
+		2118D66A2575E28800A373D2 /* Capsicum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Capsicum.wav; sourceTree = "<group>"; };
+		2118D66B2575E28800A373D2 /* Strawberry1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Strawberry1.wav; sourceTree = "<group>"; };
+		2118D66C2575E28800A373D2 /* Strawberry2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Strawberry2.wav; sourceTree = "<group>"; };
+		2118D66D2575E28800A373D2 /* Banana.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Banana.wav; sourceTree = "<group>"; };
 		212DB945248069E5000BF378 /* Swift+SpecialEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+SpecialEffects.swift"; sourceTree = "<group>"; };
 		212DB94724806A14000BF378 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
 		212E413324D2B77400FBE319 /* StartupPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupPageViewController.swift; sourceTree = "<group>"; };
+		21336917257F3CB800CE7163 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		2153D7A324D41A5D00466564 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		215F55EB24DE62AD00FF401A /* homeGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = homeGif.gif; path = Images/GIFS/HomeBackgroundGIF/homeGif.gif; sourceTree = SOURCE_ROOT; };
 		215F55ED24DEBFEA00FF401A /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIButtonExtension.swift; path = XyloLearn/View/UIButtonExtension.swift; sourceTree = SOURCE_ROOT; };
@@ -182,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				218C8913251888DD00160605 /* ImageSizeExtension.swift */,
+				21336917257F3CB800CE7163 /* Sound.swift */,
 				215F55ED24DEBFEA00FF401A /* UIButtonExtension.swift */,
 				212DB945248069E5000BF378 /* Swift+SpecialEffects.swift */,
 				212DB94724806A14000BF378 /* Swift+Gif.swift */,
@@ -245,6 +308,36 @@
 		21AC01902550EE9F00973AF5 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				2118D6552575E28600A373D2 /* Blue.wav */,
+				2118D6582575E28600A373D2 /* Green1.wav */,
+				2118D6622575E28700A373D2 /* Green2.wav */,
+				2118D6562575E28600A373D2 /* Bunny.wav */,
+				2118D65C2575E28600A373D2 /* Cat.wav */,
+				2118D65D2575E28700A373D2 /* Dog.wav */,
+				2118D6512575E28500A373D2 /* Fish1.wav */,
+				2118D64E2575DD9600A373D2 /* Fish.wav */,
+				2118D6522575E28500A373D2 /* Frog.wav */,
+				2118D6612575E28700A373D2 /* Kangaroo.wav */,
+				2118D6642575E28700A373D2 /* Goat.wav */,
+				2118D6572575E28600A373D2 /* Lion.wav */,
+				2118D6662575E28800A373D2 /* Monkey.wav */,
+				2118D6542575E28600A373D2 /* Mushroom.wav */,
+				2118D6682575E28800A373D2 /* Broccoli.wav */,
+				2118D66A2575E28800A373D2 /* Capsicum.wav */,
+				2118D65B2575E28600A373D2 /* Peas.wav */,
+				2118D64B2575DD3900A373D2 /* Apple1.wav */,
+				2118D6532575E28600A373D2 /* Apple2.wav */,
+				2118D66D2575E28800A373D2 /* Banana.wav */,
+				2118D65E2575E28700A373D2 /* Grape.wav */,
+				2118D6602575E28700A373D2 /* Grape1.wav */,
+				2118D6692575E28800A373D2 /* Kiwi.wav */,
+				2118D6652575E28700A373D2 /* Orange1.wav */,
+				2118D6632575E28700A373D2 /* Orange2.wav */,
+				2118D65A2575E28600A373D2 /* Pear1.wav */,
+				2118D65F2575E28700A373D2 /* Pear2.wav */,
+				2118D66B2575E28800A373D2 /* Strawberry1.wav */,
+				2118D66C2575E28800A373D2 /* Strawberry2.wav */,
+				2118D6592575E28600A373D2 /* Xylolearn.wav */,
 				21AC01912550EE9F00973AF5 /* A.wav */,
 				21AC01922550EE9F00973AF5 /* C.wav */,
 				21AC01932550EE9F00973AF5 /* B.wav */,
@@ -366,30 +459,47 @@
 				21EBF0892534039D00516C44 /* redheart.gif in Resources */,
 				21EBF0852534039D00516C44 /* lightblue.gif in Resources */,
 				210ADFD224A3574A0054E861 /* animatedPotato.gif in Resources */,
+				2118D6862575E28800A373D2 /* Kiwi.wav in Resources */,
 				210ADFC524A357370054E861 /* animatedStrawberry.gif in Resources */,
 				21AC01B92563423500973AF5 /* animated5.gif in Resources */,
 				21AC019A2550EE9F00973AF5 /* B.wav in Resources */,
 				210ADFE524A357580054E861 /* animatedGoat.gif in Resources */,
 				210ADFD724A3574A0054E861 /* animatedPeas.gif in Resources */,
+				2118D6702575E28800A373D2 /* Apple2.wav in Resources */,
+				2118D67D2575E28800A373D2 /* Grape1.wav in Resources */,
 				210ADFD324A3574A0054E861 /* animatedCapsicum.gif in Resources */,
 				210ADFC824A357370054E861 /* animatedWatermelon.gif in Resources */,
 				21AC01AB2563421E00973AF5 /* animatedStar.gif in Resources */,
+				2118D67F2575E28800A373D2 /* Green2.wav in Resources */,
+				2118D6722575E28800A373D2 /* Blue.wav in Resources */,
 				210ADFD124A3574A0054E861 /* animatedBroccoli.gif in Resources */,
+				2118D6712575E28800A373D2 /* Mushroom.wav in Resources */,
+				2118D6762575E28800A373D2 /* Xylolearn.wav in Resources */,
 				21EBF0882534039D00516C44 /* yellow.gif in Resources */,
 				210ADFC724A357370054E861 /* animatedBanana.gif in Resources */,
+				2118D6822575E28800A373D2 /* Orange1.wav in Resources */,
 				21AC019C2550EE9F00973AF5 /* G.wav in Resources */,
+				2118D67C2575E28800A373D2 /* Pear2.wav in Resources */,
 				21EBF08A2534039D00516C44 /* purple.gif in Resources */,
 				21AC01BB2563423500973AF5 /* animated1.gif in Resources */,
+				2118D67A2575E28800A373D2 /* Dog.wav in Resources */,
 				21AC01992550EE9F00973AF5 /* C.wav in Resources */,
 				21AC01AA2563421E00973AF5 /* animatedHeart.gif in Resources */,
 				219569D324F677A60055D2DE /* xyloLaunchScreen.storyboard in Resources */,
+				2118D6892575E28800A373D2 /* Strawberry2.wav in Resources */,
+				2118D6812575E28800A373D2 /* Goat.wav in Resources */,
 				21DEEEC32480606200CDE4E0 /* Assets.xcassets in Resources */,
 				210ADFE124A357580054E861 /* animatedKangaroo.gif in Resources */,
 				210ADFE324A357580054E861 /* animatedBunny.gif in Resources */,
 				210ADFD524A3574A0054E861 /* animatedMushroom.gif in Resources */,
 				21EBF0832534039D00516C44 /* pink.gif in Resources */,
+				2118D6882575E28800A373D2 /* Strawberry1.wav in Resources */,
+				2118D68A2575E28800A373D2 /* Banana.wav in Resources */,
 				210ADFC324A357370054E861 /* animatedApple.gif in Resources */,
+				2118D6772575E28800A373D2 /* Pear1.wav in Resources */,
+				2118D67E2575E28800A373D2 /* Kangaroo.wav in Resources */,
 				210ADFE024A357580054E861 /* animatedCat.gif in Resources */,
+				2118D6792575E28800A373D2 /* Cat.wav in Resources */,
 				21AC01BE2563423500973AF5 /* animated7.gif in Resources */,
 				21AC01BD2563423500973AF5 /* animated2.gif in Resources */,
 				21EBF0822534039D00516C44 /* blue.gif in Resources */,
@@ -397,11 +507,16 @@
 				210ADFC624A357370054E861 /* animatedGrapes.gif in Resources */,
 				21AC019B2550EE9F00973AF5 /* F.wav in Resources */,
 				210ADFD424A3574A0054E861 /* animatedCarrot.gif in Resources */,
+				2118D66F2575E28800A373D2 /* Frog.wav in Resources */,
 				210ADFC924A357370054E861 /* animatedOrange.gif in Resources */,
+				2118D6732575E28800A373D2 /* Bunny.wav in Resources */,
 				21EBF0842534039D00516C44 /* red zigzag.gif in Resources */,
+				2118D6752575E28800A373D2 /* Green1.wav in Resources */,
 				21AC019D2550EE9F00973AF5 /* E.wav in Resources */,
+				2118D6852575E28800A373D2 /* Broccoli.wav in Resources */,
 				21AC01AF2563421E00973AF5 /* animatedTriangle.gif in Resources */,
 				21AC01B82563423500973AF5 /* animated6.gif in Resources */,
+				2118D6782575E28800A373D2 /* Peas.wav in Resources */,
 				21AC01B02563421E00973AF5 /* animatedOval.gif in Resources */,
 				21AC019E2550EE9F00973AF5 /* D.wav in Resources */,
 				21AC01AC2563421E00973AF5 /* animatedSquare.gif in Resources */,
@@ -409,15 +524,23 @@
 				21DEEEC12480605F00CDE4E0 /* Main.storyboard in Resources */,
 				215F55EC24DE62AD00FF401A /* homeGif.gif in Resources */,
 				21AC01A2255623FA00973AF5 /* animatedDog.gif in Resources */,
+				2118D66E2575E28800A373D2 /* Fish1.wav in Resources */,
 				21AC01982550EE9F00973AF5 /* A.wav in Resources */,
 				21AC01BA2563423500973AF5 /* animated3.gif in Resources */,
 				210ADFE424A357580054E861 /* animatedFrog.gif in Resources */,
 				210ADFDF24A357580054E861 /* animatedLion.gif in Resources */,
+				2118D6802575E28800A373D2 /* Orange2.wav in Resources */,
+				2118D67B2575E28800A373D2 /* Grape.wav in Resources */,
 				210ADFE224A357580054E861 /* animatedFish.gif in Resources */,
+				2118D6742575E28800A373D2 /* Lion.wav in Resources */,
 				21AC01AE2563421E00973AF5 /* animatedRectangle.gif in Resources */,
+				2118D6872575E28800A373D2 /* Capsicum.wav in Resources */,
 				210ADFD624A3574A0054E861 /* animatedPumpkin.gif in Resources */,
+				2118D64F2575DD9600A373D2 /* Fish.wav in Resources */,
 				21AC01AD2563421E00973AF5 /* animatedCircle.gif in Resources */,
 				21EBF0872534039D00516C44 /* green.gif in Resources */,
+				2118D64C2575DD3900A373D2 /* Apple1.wav in Resources */,
+				2118D6832575E28800A373D2 /* Monkey.wav in Resources */,
 				210ADFC424A357370054E861 /* animatedPear.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +557,7 @@
 				215F55EE24DEBFEA00FF401A /* UIButtonExtension.swift in Sources */,
 				219569D124F23C300055D2DE /* xyloViewController.swift in Sources */,
 				212DB94824806A14000BF378 /* Swift+Gif.swift in Sources */,
+				21336918257F3CB800CE7163 /* Sound.swift in Sources */,
 				21DEEEBE2480605F00CDE4E0 /* ColorsViewController.swift in Sources */,
 				212E413424D2B77400FBE319 /* StartupPageViewController.swift in Sources */,
 				212DB946248069E5000BF378 /* Swift+SpecialEffects.swift in Sources */,

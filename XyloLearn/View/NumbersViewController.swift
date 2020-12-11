@@ -10,6 +10,11 @@ class NumbersViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     //MARK:- Home Button function
     
     @IBAction func homePressed(_ sender: UIButton) {
@@ -24,11 +29,15 @@ class NumbersViewController: UIViewController {
     @IBAction func numberPressed(_ sender: UIButton) {
         
         let customAlert = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popUpID") as! PopUpViewController
-        
-        self.addChild(customAlert)
-        customAlert.view.frame = self.view.frame
-        self.view.addSubview(customAlert.view)
-        customAlert.didMove(toParent: self)
+        self.present(customAlert, animated: true, completion:{
+        customAlert.view.superview?.isUserInteractionEnabled = true
+        customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
+        })
+
+//        self.addChild(customAlert)
+//        customAlert.view.frame = self.view.frame
+//        self.view.addSubview(customAlert.view)
+//        customAlert.didMove(toParent: self)
         
        //MARK:- Image View Initialization
         
@@ -37,7 +46,7 @@ class NumbersViewController: UIViewController {
         imageView.isAccessibilityElement = true
         customAlert.view.addSubview(imageView)
         
-        //MARK:- Loop For Different Images
+        //MARK:- Loop For Different Images and Sounds
         
         if sender.currentTitle == "1" {
             imageView.loadGif(name: "animated1")

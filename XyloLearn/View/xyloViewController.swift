@@ -11,6 +11,10 @@ class xyloViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     //MARK:- Home Button function
     
     @IBAction func homePressed(_ sender: UIButton) {
@@ -34,13 +38,5 @@ class xyloViewController: UIViewController {
             //Bring's sender's opacity back up to fully opaque.
             sender.alpha = 1.0
         }
-        
-    }
-  
-    func playSound(soundName: String) {
-        let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player.play()
-        
     }
 }

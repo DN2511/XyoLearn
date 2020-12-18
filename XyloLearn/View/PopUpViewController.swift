@@ -16,6 +16,7 @@ class PopUpViewController: UIViewController {
     var timeLeft = 0
     var myTimer = Timer()
   
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,21 +27,23 @@ class PopUpViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-    }
+        }
     
     @IBOutlet var customView: UIView!
     @IBOutlet var gif: UIImageView!
     
-    override func viewWillDisappear(_ animated: Bool) {
+//    override func viewWillDisappear(_ animated: Bool) {
+//        player?.stop()
+//    }
+    
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        view.removeFromSuperview()
         player?.stop()
+        myTimer.invalidate()
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
     //MARK:- Timer Function
     
     @objc func timerRunning() {

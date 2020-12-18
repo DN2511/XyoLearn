@@ -64,5 +64,4 @@ class HomePageViewController: UIViewController {
                self.navigationController?.pushViewController(nVC, animated: false)
         
     }
-    
 }

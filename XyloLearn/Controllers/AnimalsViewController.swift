@@ -12,7 +12,7 @@ class AnimalsViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -26,6 +26,10 @@ class AnimalsViewController: UIViewController{
         self.navigationController?.pushViewController(hVC, animated: false)
     }
     
+    deinit {
+        print("Here I am trying to deallocate the memory")
+    }
+    
     //MARK:- Button for Animals & Custom Alert Initialization
     
     @IBAction func animalPressed(_ sender: UIButton) {
@@ -34,10 +38,8 @@ class AnimalsViewController: UIViewController{
         self.present(customAlert, animated: true, completion:{
         customAlert.view.superview?.isUserInteractionEnabled = true
         customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
-        })
-        
-       
-        
+            })
+   
 //        self.addChild(customAlert)
 //        customAlert.view.frame = self.view.frame
 //        self.view.addSubview(customAlert.view)
@@ -54,11 +56,11 @@ class AnimalsViewController: UIViewController{
         
         if sender.currentTitle == "1" {
             imageView.loadGif(name: "animatedCat")
-            playSound(soundName: "Cat")
+//            playSound(soundName: "Cat")
         }
         else if sender.currentTitle == "2" {
             imageView.loadGif(name: "animatedBunny")
-            playSound(soundName: "Bunny")
+//            playSound(soundName: "Bunny")
         }
         else if sender.currentTitle == "3" {
             imageView.loadGif(name: "animatedFish")

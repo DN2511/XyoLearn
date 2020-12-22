@@ -22,7 +22,7 @@ class PopUpViewController: UIViewController {
         
         //MARK:- Timer for removing the view
 
-        myTimer = Timer.scheduledTimer(timeInterval: 25.0, target: self, selector: #selector(PopUpViewController.timerRunning), userInfo: nil, repeats: true)
+        myTimer = Timer.scheduledTimer(timeInterval: 31.0, target: self, selector: #selector(PopUpViewController.timerRunning), userInfo: nil, repeats: true)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -33,10 +33,11 @@ class PopUpViewController: UIViewController {
     @IBOutlet var gif: UIImageView!
     
 //    override func viewWillDisappear(_ animated: Bool) {
+//        view.removeFromSuperview()
 //        player?.stop()
+//        myTimer.invalidate()
 //    }
     
-
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         view.removeFromSuperview()

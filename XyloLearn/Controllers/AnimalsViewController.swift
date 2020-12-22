@@ -13,10 +13,6 @@ class AnimalsViewController: UIViewController{
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     //MARK:- Home Button function
     
     @IBAction func homePressed(_ sender: UIButton) {
@@ -25,11 +21,7 @@ class AnimalsViewController: UIViewController{
         
         self.navigationController?.pushViewController(hVC, animated: false)
     }
-    
-    deinit {
-        print("Here I am trying to deallocate the memory")
-    }
-    
+
     //MARK:- Button for Animals & Custom Alert Initialization
     
     @IBAction func animalPressed(_ sender: UIButton) {
@@ -56,11 +48,11 @@ class AnimalsViewController: UIViewController{
         
         if sender.currentTitle == "1" {
             imageView.loadGif(name: "animatedCat")
-//            playSound(soundName: "Cat")
+            playSound(soundName: "Cat")
         }
         else if sender.currentTitle == "2" {
             imageView.loadGif(name: "animatedBunny")
-//            playSound(soundName: "Bunny")
+            playSound(soundName: "Bunny")
         }
         else if sender.currentTitle == "3" {
             imageView.loadGif(name: "animatedFish")

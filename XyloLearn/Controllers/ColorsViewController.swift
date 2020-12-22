@@ -14,11 +14,6 @@ class ColorsViewController: UIViewController {
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     //MARK:- Home Button function
     
     @IBAction func homePressed(_ sender: UIButton) {
@@ -55,9 +50,11 @@ class ColorsViewController: UIViewController {
         
         if sender.currentTitle == "1" {
             imageView.loadGif(name: "redheart")
+              playSound(soundName: "Red")
         }
         else if sender.currentTitle == "2" {
             imageView.loadGif(name: "orange")
+            playSound(soundName: "Orange")
         }
         else if sender.currentTitle == "3" {
             imageView.loadGif(name: "blue")
@@ -72,9 +69,11 @@ class ColorsViewController: UIViewController {
         }
         else if sender.currentTitle == "6" {
             imageView.loadGif(name: "yellow")
+            playSound(soundName: "Yellow")
         }
         else {
             imageView.loadGif(name: "pink")
+            playSound(soundName: "Pink")
         }
         
         //MARK:- Image Constraints

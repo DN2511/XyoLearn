@@ -10,11 +10,6 @@ class NumbersViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     //MARK:- Home Button function
     
     @IBAction func homePressed(_ sender: UIButton) {
@@ -49,25 +44,32 @@ class NumbersViewController: UIViewController {
         //MARK:- Loop For Different Images and Sounds
         
         if sender.currentTitle == "1" {
-            imageView.loadGif(name: "animated1")
+            imageView.loadGif(name: "1")
+            playSound(soundName: "One")
         }
         else if sender.currentTitle == "2" {
-            imageView.loadGif(name: "animated2")
+            imageView.loadGif(name: "2")
+            playSound(soundName: "Two")
         }
         else if sender.currentTitle == "3" {
-            imageView.loadGif(name: "animated3")
+            imageView.loadGif(name: "3")
+            playSound(soundName: "Three")
         }
         else if sender.currentTitle == "4" {
-            imageView.loadGif(name: "animated4")
+            imageView.loadGif(name: "4")
+            playSound(soundName: "Four")
         }
         else if sender.currentTitle == "5" {
-            imageView.loadGif(name: "animated5")
+            imageView.loadGif(name: "5")
+            playSound(soundName: "Five")
         }
         else if sender.currentTitle == "6" {
-            imageView.loadGif(name: "animated6")
+            imageView.loadGif(name: "6")
+            playSound(soundName: "Six")
         }
         else {
-            imageView.loadGif(name: "animated7")
+            imageView.loadGif(name: "7")
+            playSound(soundName: "Seven")
         }
         
         //MARK:- Image Constraints

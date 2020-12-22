@@ -18,7 +18,7 @@ class HomePageViewController: UIViewController {
         
         self.navigationController?.pushViewController(cVC, animated: false)
     }
-    
+
     @IBAction func animalButtonPressed(_ sender: UIButton) {
         
         let aVC = self.storyboard?.instantiateViewController(withIdentifier: "animalVC") as! AnimalsViewController

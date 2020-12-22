@@ -13,11 +13,6 @@ class ShapesViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     //MARK:- Home Button function
     
     @IBAction func homePressed(_ sender: UIButton) {
@@ -53,25 +48,31 @@ class ShapesViewController: UIViewController {
         
         if sender.currentTitle == "1" {
             imageView.loadGif(name: "animatedCircle")
-//            playSound(soundName: "test")
+            playSound(soundName: "Circle")
         }
         else if sender.currentTitle == "2" {
             imageView.loadGif(name: "animatedHeart")
+            playSound(soundName: "Heart")
         }
         else if sender.currentTitle == "3" {
             imageView.loadGif(name: "animatedOval")
+            playSound(soundName: "Oval")
         }
         else if sender.currentTitle == "4" {
             imageView.loadGif(name: "animatedRectangle")
+            playSound(soundName: "Rectangle")
         }
         else if sender.currentTitle == "5" {
             imageView.loadGif(name: "animatedSquare")
+            playSound(soundName: "Square")
         }
         else if sender.currentTitle == "6" {
             imageView.loadGif(name: "animatedStar")
+            playSound(soundName: "Star")
         }
         else {
             imageView.loadGif(name: "animatedTriangle")
+            playSound(soundName: "Triangle")
         }
         
         //MARK:- Image Constraints

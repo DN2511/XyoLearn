@@ -7,7 +7,7 @@ import AVFoundation
 
 class ShapesViewController: UIViewController {
     
-    var player: AVAudioPlayer!
+    unowned var player: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +31,14 @@ class ShapesViewController: UIViewController {
         customAlert.view.superview?.isUserInteractionEnabled = true
         customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
         })
-
+        
 //        self.addChild(customAlert)
 //        customAlert.view.frame = self.view.frame
 //        self.view.addSubview(customAlert.view)
 //        customAlert.didMove(toParent: self)
-
+        
+        customAlert.view.contentMode = .scaleAspectFill
+        
         //MARK:- Image View Initialization
         
         let imageView = UIImageView()
@@ -47,32 +49,32 @@ class ShapesViewController: UIViewController {
         //MARK:- Loop For Different Images and Sounds
         
         if sender.currentTitle == "1" {
-            imageView.loadGif(name: "animatedCircle")
-            playSound(soundName: "Circle")
-        }
-        else if sender.currentTitle == "2" {
-            imageView.loadGif(name: "animatedHeart")
-            playSound(soundName: "Heart")
-        }
-        else if sender.currentTitle == "3" {
-            imageView.loadGif(name: "animatedOval")
-            playSound(soundName: "Oval")
-        }
-        else if sender.currentTitle == "4" {
             imageView.loadGif(name: "animatedRectangle")
             playSound(soundName: "Rectangle")
         }
-        else if sender.currentTitle == "5" {
-            imageView.loadGif(name: "animatedSquare")
-            playSound(soundName: "Square")
+        else if sender.currentTitle == "2" {
+            imageView.loadGif(name: "animatedCircle")
+            playSound(soundName: "Circle")
         }
-        else if sender.currentTitle == "6" {
+        else if sender.currentTitle == "3" {
+            imageView.loadGif(name: "animatedTriangle")
+            playSound(soundName: "Triangle")
+        }
+        else if sender.currentTitle == "4" {
+            imageView.loadGif(name: "animatedHeart")
+            playSound(soundName: "Heart")
+        }
+        else if sender.currentTitle == "5" {
             imageView.loadGif(name: "animatedStar")
             playSound(soundName: "Star")
         }
+        else if sender.currentTitle == "6" {
+            imageView.loadGif(name: "animatedSquare")
+            playSound(soundName: "Square")
+        }
         else {
-            imageView.loadGif(name: "animatedTriangle")
-            playSound(soundName: "Triangle")
+            imageView.loadGif(name: "animatedOval")
+            playSound(soundName: "Oval")
         }
         
         //MARK:- Image Constraints
@@ -82,5 +84,8 @@ class ShapesViewController: UIViewController {
         imageView.trailingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         imageView.topAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.topAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+    }
+    deinit {
+        print("Shapes deinitialized")
     }
 }

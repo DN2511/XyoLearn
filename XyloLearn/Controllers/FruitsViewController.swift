@@ -32,11 +32,6 @@ class FruitsViewController: UIViewController {
         customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
         })
 
-//        self.addChild(customAlert)
-//        customAlert.view.frame = self.view.frame
-//        self.view.addSubview(customAlert.view)
-//        customAlert.didMove(toParent: self)
-        
         //MARK:- Image View Initialization
         
         let imageView = UIImageView()
@@ -47,31 +42,32 @@ class FruitsViewController: UIViewController {
         //MARK:- Loop For Different Images and Sounds
         
         if sender.currentTitle == "1" {
-            imageView.loadGif(name: "animatedApple")
-            playSound(soundName: "Apple1")
-        }
-        else if sender.currentTitle == "2" {
             imageView.loadGif(name: "animatedBanana")
             playSound(soundName: "Banana")
         }
+        else if sender.currentTitle == "2" {
+            imageView.loadGif(name: "animatedStrawberry")
+            playSound(soundName: "Strawberry")
+        }
         else if sender.currentTitle == "3" {
-            imageView.loadGif(name: "animatedOrange")
-            playSound(soundName: "Orange1")
+            imageView.loadGif(name: "animatedPear")
+            playSound(soundName: "Pear")
         }
         else if sender.currentTitle == "4" {
-            imageView.loadGif(name: "animatedWatermelon")
+            imageView.loadGif(name: "animatedOrange")
+            playSound(soundName: "Orange")
         }
         else if sender.currentTitle == "5" {
-            imageView.loadGif(name: "animatedPear")
-            playSound(soundName: "Pear1")
+            imageView.loadGif(name: "animatedKiwi")
+            playSound(soundName: "Kiwi")
         }
         else if sender.currentTitle == "6" {
-            imageView.loadGif(name: "animatedStrawberry")
-            playSound(soundName: "Strawberry1")
+            imageView.loadGif(name: "animatedGrapes")
+            playSound(soundName: "Grape")
         }
         else {
-            imageView.loadGif(name: "animatedGrapes")
-            playSound(soundName: "Grape1")
+            imageView.loadGif(name: "animatedApple")
+            playSound(soundName: "Apple")
         }
         
         //MARK:- Image Constraints

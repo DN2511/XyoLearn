@@ -51,25 +51,28 @@ class VegetablesViewController: UIViewController {
             playSound(soundName: "Broccoli")
         }
         else if sender.currentTitle == "2" {
-            imageView.loadGif(name: "animatedCarrot")
-        }
-        else if sender.currentTitle == "3" {
-            imageView.loadGif(name: "animatedCapsicum")
-            playSound(soundName: "Capsicum")
-        }
-        else if sender.currentTitle == "4" {
-            imageView.loadGif(name: "animatedPumpkin")
-        }
-        else if sender.currentTitle == "5" {
             imageView.loadGif(name: "animatedMushroom")
             playSound(soundName: "Mushroom")
         }
+        else if sender.currentTitle == "3" {
+            imageView.loadGif(name: "animatedCarrot")
+            playSound(soundName: "Carrot")
+        }
+        else if sender.currentTitle == "4" {
+            imageView.loadGif(name: "animatedPumpkin")
+            playSound(soundName: "Pumpkin")
+        }
+        else if sender.currentTitle == "5" {
+            imageView.loadGif(name: "animatedCapsicum")
+            playSound(soundName: "Capsicum")
+        }
         else if sender.currentTitle == "6" {
             imageView.loadGif(name: "animatedPotato")
+            playSound(soundName: "Potato")
         }
         else {
-            imageView.loadGif(name: "animatedPeas")
-            playSound(soundName: "Peas")
+            imageView.loadGif(name: "animatedEggplant")
+            playSound(soundName: "Eggplant")
         }
         
         //MARK:- Image Constraints

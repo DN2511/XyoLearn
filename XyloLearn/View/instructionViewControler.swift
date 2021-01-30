@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+class instructionsViewController: UIViewController {
+    
+    @IBOutlet  var gifBackground: UIImageView!
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+                gifBackground.loadGif(name: "instructions")
+    }
+}

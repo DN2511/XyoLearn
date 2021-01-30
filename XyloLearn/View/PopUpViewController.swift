@@ -19,30 +19,29 @@ class PopUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        stopPlayer()
         
         //MARK:- Timer for removing the view
 
-        myTimer = Timer.scheduledTimer(timeInterval: 31.0, target: self, selector: #selector(PopUpViewController.timerRunning), userInfo: nil, repeats: true)
+        myTimer = Timer.scheduledTimer(timeInterval: 27.0, target: self, selector: #selector(PopUpViewController.timerRunning), userInfo: nil, repeats: true)
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         }
     
-    @IBOutlet var customView: UIView!
-    @IBOutlet var gif: UIImageView!
-    
-//    override func viewWillDisappear(_ animated: Bool) {
-//        view.removeFromSuperview()
-//        player?.stop()
-//        myTimer.invalidate()
-//    }
+    @IBOutlet unowned var customView: UIView!
+    @IBOutlet unowned var gif: UIImageView!
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         view.removeFromSuperview()
         player?.stop()
         myTimer.invalidate()
+        playSound(soundName: "backgroundMusic")
+    }
+    
+    deinit {
     }
 
     //MARK:- Timer Function

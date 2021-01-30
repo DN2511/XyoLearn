@@ -49,7 +49,7 @@ class ColorsViewController: UIViewController {
         //MARK:- Loop For Different Images and Sounds
         
         if sender.currentTitle == "1" {
-            imageView.loadGif(name: "redheart")
+            imageView.loadGif(name: "red")
               playSound(soundName: "Red")
         }
         else if sender.currentTitle == "2" {
@@ -62,10 +62,11 @@ class ColorsViewController: UIViewController {
         }
         else if sender.currentTitle == "4" {
             imageView.loadGif(name: "green")
-            playSound(soundName: "Green1")
+            playSound(soundName: "Green")
         }
         else if sender.currentTitle == "5" {
             imageView.loadGif(name: "purple")
+            playSound(soundName: "Purple")
         }
         else if sender.currentTitle == "6" {
             imageView.loadGif(name: "yellow")

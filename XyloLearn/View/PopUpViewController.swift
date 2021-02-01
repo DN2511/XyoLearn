@@ -38,10 +38,12 @@ class PopUpViewController: UIViewController {
         view.removeFromSuperview()
         player?.stop()
         myTimer.invalidate()
-        playSound(soundName: "backgroundMusic")
+        playSoundOnLoop(soundName: "Background")
     }
     
     deinit {
+        customView.removeFromSuperview()
+        gif.removeFromSuperview()
     }
 
     //MARK:- Timer Function

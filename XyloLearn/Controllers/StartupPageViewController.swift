@@ -25,7 +25,7 @@ class StartupPageViewController: UIViewController {
         super.viewDidAppear(animated)
         
         gifBackground.loadGif(name: "homeGif")
-        playSound(soundName: "XyloLearn")
+        playSound(soundName: "Xylolearn")
         
         myTimer = Timer.scheduledTimer(withTimeInterval:5.0, repeats: false) { [unowned self] (myTimer) in
             self.navigate()

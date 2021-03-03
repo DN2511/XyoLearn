@@ -15,6 +15,6 @@ class instructionsViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-                gifBackground.loadGif(name: "instructions")
+                gifBackground.loadGif(name: "Instructions")
     }
 }

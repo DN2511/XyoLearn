@@ -5,7 +5,7 @@ import AVFoundation
 
 class xyloViewController: UIViewController {
     
-    var player: AVAudioPlayer!
+//    var player: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,56 +1,54 @@
-//
-//  PopUpViewController.swift
-//  XyloLearn
-//
-//  Created by Deepanshu Nautiyal on 20/9/20.
-//  Copyright © 2020 Deepanshu Nautiyal. All rights reserved.
-//
-
-
+import Foundation
 import UIKit
-import ImageIO
-import AVFoundation
+import AVKit
 
 class PopUpViewController: UIViewController {
     
-    var timeLeft = 0
-    var myTimer = Timer()
-  
-
+    var player: AVPlayer!
+    var avPlayerLayer: AVPlayerLayer!
+    
+    @IBOutlet var videoView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         stopPlayer()
-        
-        //MARK:- Timer for removing the view
-
-        myTimer = Timer.scheduledTimer(timeInterval: 27.0, target: self, selector: #selector(PopUpViewController.timerRunning), userInfo: nil, repeats: true)
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        }
-    
-    @IBOutlet unowned var customView: UIView!
-    @IBOutlet unowned var gif: UIImageView!
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         view.removeFromSuperview()
-        player?.stop()
-        myTimer.invalidate()
         playSoundOnLoop(soundName: "Background")
     }
     
-    deinit {
-        customView.removeFromSuperview()
-        gif.removeFromSuperview()
+    
+    func playVideo(videoName: String){
+        
+        guard let path = Bundle.main.path(forResource: videoName, ofType: "mp4") else {
+            print("No Video found!!")
+            return
+        }
+        
+        player = AVPlayer(url: URL(fileURLWithPath: path))
+        avPlayerLayer = AVPlayerLayer(player: player)
+        avPlayerLayer.videoGravity = AVLayerVideoGravity.resize
+        
+        videoView.layer.addSublayer(avPlayerLayer!)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: avPlayerLayer.player?.currentItem)
+        
+        playVideo()
+    }
+    
+    override func viewDidLayoutSubviews() {
+
+        avPlayerLayer.frame = videoView.layer.bounds
     }
 
-    //MARK:- Timer Function
+    private func playVideo() {
+        player.play()
+    }
     
-    @objc func timerRunning() {
-        self.view.removeFromSuperview()
+    @objc func playerDidFinishPlaying(note: NSNotification){
+        dismiss(animated: true, completion: nil)
     }
 }
-
-

@@ -2,15 +2,16 @@
 
 import Foundation
 import UIKit
-import ImageIO
-import AVFoundation
+//import ImageIO
+//import AVFoundation
+//import StoreKit
 
-class ShapesViewController: UIViewController {
+class ShapesViewController: UIViewController{
     
-    unowned var player: AVAudioPlayer!
+//    unowned var player: AVAudioPlayer!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()         
     }
     
     //MARK:- Home Button function
@@ -22,70 +23,44 @@ class ShapesViewController: UIViewController {
         self.navigationController?.pushViewController(hVC, animated: false)
     }
     
+      
     //MARK:- Button for Shapes & Custom Alert Initialization
     
     @IBAction func shapePressed(_ sender: UIButton) {
-        
+
         let customAlert = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popUpID") as! PopUpViewController
+        
+        customAlert.modalPresentationStyle = UIModalPresentationStyle.custom
+        
+        customAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        
         self.present(customAlert, animated: true, completion:{
-        customAlert.view.superview?.isUserInteractionEnabled = true
-        customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
+            customAlert.view.superview?.isUserInteractionEnabled = true
+            customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
         })
-        
-//        self.addChild(customAlert)
-//        customAlert.view.frame = self.view.frame
-//        self.view.addSubview(customAlert.view)
-//        customAlert.didMove(toParent: self)
-        
-        customAlert.view.contentMode = .scaleAspectFill
-        
-        //MARK:- Image View Initialization
-        
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.isAccessibilityElement = true
-        customAlert.view.addSubview(imageView)
-        
-        //MARK:- Loop For Different Images and Sounds
+        //MARK:- Loop For Different mp4
         
         if sender.currentTitle == "1" {
-            imageView.loadGif(name: "animatedRectangle")
-            playSound(soundName: "Rectangle")
+            customAlert.playVideo(videoName: "Rectangle")
         }
         else if sender.currentTitle == "2" {
-            imageView.loadGif(name: "animatedCircle")
-            playSound(soundName: "Circle")
+            customAlert.playVideo(videoName: "Circle")
         }
         else if sender.currentTitle == "3" {
-            imageView.loadGif(name: "animatedTriangle")
-            playSound(soundName: "Triangle")
+            customAlert.playVideo(videoName: "Triangle")
         }
         else if sender.currentTitle == "4" {
-            imageView.loadGif(name: "animatedHeart")
-            playSound(soundName: "Heart")
+            customAlert.playVideo(videoName: "Heart")
         }
         else if sender.currentTitle == "5" {
-            imageView.loadGif(name: "animatedStar")
-            playSound(soundName: "Star")
+            customAlert.playVideo(videoName: "Star")
         }
         else if sender.currentTitle == "6" {
-            imageView.loadGif(name: "animatedSquare")
-            playSound(soundName: "Square")
+            customAlert.playVideo(videoName: "Square")
         }
         else {
-            imageView.loadGif(name: "animatedOval")
-            playSound(soundName: "Oval")
+            customAlert.playVideo(videoName: "Oval")
         }
-        
-        //MARK:- Image Constraints
-        
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.leadingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        imageView.topAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.topAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-    }
-    deinit {
-        print("Shapes deinitialized")
     }
 }
+

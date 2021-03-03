@@ -2,12 +2,13 @@
 
 import Foundation
 import UIKit
-import ImageIO
+//import ImageIO
 
 class NumbersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
     
     //MARK:- Home Button function
@@ -24,60 +25,37 @@ class NumbersViewController: UIViewController {
     @IBAction func numberPressed(_ sender: UIButton) {
         
         let customAlert = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popUpID") as! PopUpViewController
+        
+        customAlert.modalPresentationStyle = UIModalPresentationStyle.custom
+        
+        customAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        
         self.present(customAlert, animated: true, completion:{
         customAlert.view.superview?.isUserInteractionEnabled = true
-        customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
+            customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
         })
-
-//        self.addChild(customAlert)
-//        customAlert.view.frame = self.view.frame
-//        self.view.addSubview(customAlert.view)
-//        customAlert.didMove(toParent: self)
-        
-       //MARK:- Image View Initialization
-        
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.isAccessibilityElement = true
-        customAlert.view.addSubview(imageView)
-        
-        //MARK:- Loop For Different Images and Sounds
+        //MARK:- Loop For Different mp4
         
         if sender.currentTitle == "1" {
-            imageView.loadGif(name: "1")
-            playSound(soundName: "One")
+            customAlert.playVideo(videoName: "1")
         }
         else if sender.currentTitle == "2" {
-            imageView.loadGif(name: "2")
-            playSound(soundName: "Two")
+            customAlert.playVideo(videoName: "2")
         }
         else if sender.currentTitle == "3" {
-            imageView.loadGif(name: "3")
-            playSound(soundName: "Three")
+            customAlert.playVideo(videoName: "3")
         }
         else if sender.currentTitle == "4" {
-            imageView.loadGif(name: "4")
-            playSound(soundName: "Four")
+            customAlert.playVideo(videoName: "4")
         }
         else if sender.currentTitle == "5" {
-            imageView.loadGif(name: "5")
-            playSound(soundName: "Five")
+            customAlert.playVideo(videoName: "5")
         }
         else if sender.currentTitle == "6" {
-            imageView.loadGif(name: "6")
-            playSound(soundName: "Six")
+            customAlert.playVideo(videoName: "6")
         }
         else {
-            imageView.loadGif(name: "7")
-            playSound(soundName: "Seven")
+            customAlert.playVideo(videoName: "7")
         }
-        
-        //MARK:- Image Constraints
-        
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.leadingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        imageView.topAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.topAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
 }

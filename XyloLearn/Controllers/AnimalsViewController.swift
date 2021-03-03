@@ -2,18 +2,17 @@
 
 import Foundation
 import UIKit
-import ImageIO
-import AVFoundation
+//import ImageIO
+//import AVFoundation
 
 class AnimalsViewController: UIViewController{
     
-   unowned var player: AVAudioPlayer!
+//    unowned var player: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
+    
     //MARK:- Home Button function
     
     @IBAction func homePressed(_ sender: UIButton) {
@@ -22,67 +21,45 @@ class AnimalsViewController: UIViewController{
         
         self.navigationController?.pushViewController(hVC, animated: false)
     }
-
-    //MARK:- Button for Animals & Custom Alert Initialization
     
-    @IBAction func animalPressed(_ sender: UIButton) {
+    //MARK:- Button for Vegetables & Custom Alert Initialization
+    
+    @IBAction func animalButtonPressed(_ sender: UIButton) {
         
         let customAlert = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popUpID") as! PopUpViewController
-        self.present(customAlert, animated: false, completion:{
-        customAlert.view.superview?.isUserInteractionEnabled = true
-        customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
-            })
-   
-//        self.addChild(customAlert)
-        customAlert.view.frame = self.view.frame
-        self.view.addSubview(customAlert.view)
-        customAlert.didMove(toParent: self)
         
-        //MARK:- Image View Initialization
+        customAlert.modalPresentationStyle = UIModalPresentationStyle.custom
         
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.isAccessibilityElement = true
-        customAlert.view.addSubview(imageView)
+        customAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         
-        //MARK:- Loop For Different Images and Sounds
+        self.present(customAlert, animated: true, completion:{
+            customAlert.view.superview?.isUserInteractionEnabled = true
+            customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
+        })
+        //MARK:- Loop For Different mp4
         
         if sender.currentTitle == "1" {
-            imageView.loadGif(name: "animatedBunny")
-            playSound(soundName: "Bunny")
+            customAlert.playVideo(videoName: "Bunny")
         }
         else if sender.currentTitle == "2" {
-            imageView.loadGif(name: "animatedFrog")
-            playSound(soundName: "Frog")
+            customAlert.playVideo(videoName: "Frog")
         }
         else if sender.currentTitle == "3" {
-            imageView.loadGif(name: "animatedLion")
-            playSound(soundName: "Lion")
+            customAlert.playVideo(videoName: "Lion")
         }
         else if sender.currentTitle == "4" {
-            imageView.loadGif(name: "animatedGoat")
-            playSound(soundName: "Goat")
+            customAlert.playVideo(videoName: "Goat")
         }
         else if sender.currentTitle == "5" {
-            imageView.loadGif(name: "animatedFish")
-            playSound(soundName: "Fish")
+            customAlert.playVideo(videoName: "Fish")
         }
         else if sender.currentTitle == "6" {
-            imageView.loadGif(name: "animatedCat")
-            playSound(soundName: "Cat")
+            customAlert.playVideo(videoName: "Cat")
         }
         else {
-            imageView.loadGif(name: "animatedDog")
-            playSound(soundName: "Dog")
+            customAlert.playVideo(videoName: "Dog")
         }
-        
-        //MARK:- Image Constraints
-        
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.leadingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        imageView.topAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.topAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.bottomAnchor).isActive = true        
     }
 }
+
 

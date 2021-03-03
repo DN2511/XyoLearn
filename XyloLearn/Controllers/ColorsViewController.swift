@@ -2,12 +2,12 @@
 
 import Foundation
 import UIKit
-import ImageIO
-import AVFoundation
+//import ImageIO
+//import AVFoundation
 
 class ColorsViewController: UIViewController {
     
-    var player:AVAudioPlayer!
+//    var player:AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,63 +28,38 @@ class ColorsViewController: UIViewController {
     @IBAction func colorPressed(_ sender: UIButton) {
         
         let customAlert = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popUpID") as! PopUpViewController
+        
+        customAlert.modalPresentationStyle = UIModalPresentationStyle.custom
+
+        customAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        
         self.present(customAlert, animated: true, completion:{
         customAlert.view.superview?.isUserInteractionEnabled = true
             customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
         })
-
-        
-//        self.addChild(customAlert)
-//        customAlert.view.frame = self.view.frame
-//        self.view.addSubview(customAlert.view)
-//        customAlert.didMove(toParent: self)
-        
-        //MARK:- Image View Initialization
-        
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.isAccessibilityElement = true
-        customAlert.view.addSubview(imageView)
-        
-        //MARK:- Loop For Different Images and Sounds
+        //MARK:- Loop For Different mp4
         
         if sender.currentTitle == "1" {
-            imageView.loadGif(name: "red")
-              playSound(soundName: "Red")
+            customAlert.playVideo(videoName: "Red")
         }
         else if sender.currentTitle == "2" {
-            imageView.loadGif(name: "orange")
-            playSound(soundName: "Orange")
+            customAlert.playVideo(videoName: "OrangeColour")
         }
         else if sender.currentTitle == "3" {
-            imageView.loadGif(name: "blue")
-            playSound(soundName: "Blue")
+            customAlert.playVideo(videoName: "Blue")
         }
         else if sender.currentTitle == "4" {
-            imageView.loadGif(name: "green")
-            playSound(soundName: "Green")
+            customAlert.playVideo(videoName: "Green")
         }
         else if sender.currentTitle == "5" {
-            imageView.loadGif(name: "purple")
-            playSound(soundName: "Purple")
+            customAlert.playVideo(videoName: "Purple")
         }
         else if sender.currentTitle == "6" {
-            imageView.loadGif(name: "yellow")
-            playSound(soundName: "Yellow")
+            customAlert.playVideo(videoName: "Yellow")
         }
         else {
-            imageView.loadGif(name: "pink")
-            playSound(soundName: "Pink")
+            customAlert.playVideo(videoName: "Pink")
         }
-        
-        //MARK:- Image Constraints
-        
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.leadingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        imageView.topAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.topAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        
     }
 }
 

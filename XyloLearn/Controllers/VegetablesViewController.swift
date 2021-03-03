@@ -2,12 +2,12 @@
 
 import Foundation
 import UIKit
-import ImageIO
-import AVFoundation
+//import ImageIO
+//import AVFoundation
 
 class VegetablesViewController: UIViewController {
     
-    var player: AVAudioPlayer!
+//    var player: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,60 +27,37 @@ class VegetablesViewController: UIViewController {
     @IBAction func vegetablePressed(_ sender: UIButton) {
         
         let customAlert = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "popUpID") as! PopUpViewController
+        
+        customAlert.modalPresentationStyle = UIModalPresentationStyle.custom
+        
+        customAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        
         self.present(customAlert, animated: true, completion:{
         customAlert.view.superview?.isUserInteractionEnabled = true
-        customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
+            customAlert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTap)))
         })
-
-//        self.addChild(customAlert)
-//        customAlert.view.frame = self.view.frame
-//        self.view.addSubview(customAlert.view)
-//        customAlert.didMove(toParent: self)
-        
-        //MARK:- Image View Initialization
-        
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.isAccessibilityElement = true
-        customAlert.view.addSubview(imageView)
-        
-        //MARK:- Loop For Different Images and Sounds
+        //MARK:- Loop For Different mp4
         
         if sender.currentTitle == "1" {
-            imageView.loadGif(name: "animatedBroccoli")
-            playSound(soundName: "Broccoli")
+            customAlert.playVideo(videoName: "Broccoli")
         }
         else if sender.currentTitle == "2" {
-            imageView.loadGif(name: "animatedMushroom")
-            playSound(soundName: "Mushroom")
+            customAlert.playVideo(videoName: "Mushroom")
         }
         else if sender.currentTitle == "3" {
-            imageView.loadGif(name: "animatedCarrot")
-            playSound(soundName: "Carrot")
+            customAlert.playVideo(videoName: "Carrot")
         }
         else if sender.currentTitle == "4" {
-            imageView.loadGif(name: "animatedPumpkin")
-            playSound(soundName: "Pumpkin")
+            customAlert.playVideo(videoName: "Pumpkin")
         }
         else if sender.currentTitle == "5" {
-            imageView.loadGif(name: "animatedCapsicum")
-            playSound(soundName: "Capsicum")
+            customAlert.playVideo(videoName: "Capsicum")
         }
         else if sender.currentTitle == "6" {
-            imageView.loadGif(name: "animatedPotato")
-            playSound(soundName: "Potato")
+            customAlert.playVideo(videoName: "Potato")
         }
         else {
-            imageView.loadGif(name: "animatedEggplant")
-            playSound(soundName: "Eggplant")
+            customAlert.playVideo(videoName: "Eggplant")
         }
-        
-        //MARK:- Image Constraints
-        
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.leadingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        imageView.topAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.topAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: customAlert.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
 }

@@ -1,0 +1,44 @@
+{
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "1123FCE0",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Shapes",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.bubbapedia.xylolearn1.Paisa7",
+      "referenceName" : "Shapes",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "B212603A",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Numbers",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.bubbapedia.xylolearn1.Paisa6",
+      "referenceName" : "Numbers",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 0
+  }
+}

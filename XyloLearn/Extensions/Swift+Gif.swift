@@ -2,7 +2,6 @@
 
 import UIKit
 import ImageIO
-import WebKit
 
 extension UIImageView {
 
